@@ -12,7 +12,7 @@ const filterProjects = () => {
     let remainingProjects = projects;
     if (filters.length > 0) {
         filters.forEach(filter => {
-            console.log(filter);
+            // console.log(filter);
             if (filter.category === categories.fonction) {
                 filteredProjects = filteredProjects.filter(p => p.fonction.includes(filter.value))
             } else if (filter.category === categories.action) {
@@ -22,24 +22,24 @@ const filterProjects = () => {
             } else if (filter.category === categories.elements) {
                 filteredProjects = filteredProjects.filter(p => p.elements.includes(filter.value))
             }
-            console.log(filteredProjects);
+            // console.log(filteredProjects);
         });
         remainingProjects = projects.filter(p => !filteredProjects.includes(p));
     }
     for (let i = 0; i < filteredProjects.length; i++) {
         const project = filteredProjects[i];
         const selectedProject = document.getElementById(project.id);
-        selectedProject.classList.add("colorMe")
+        selectedProject.classList.add("filtered")
     }
     for (let i = 0; i < remainingProjects.length; i++) {
         const project = remainingProjects[i];
         const selectedProject = document.getElementById(project.id);
-        selectedProject.classList.remove("colorMe")
+        selectedProject.classList.remove("filtered")
     }
 
 }
 
-const buttons = document.querySelectorAll(".filters label");
+const buttons = document.querySelectorAll(".filter-btn");
 buttons.forEach(btn => {
     btn.addEventListener("click", () => {
         if (btn.classList.contains("active")) {
@@ -54,14 +54,56 @@ buttons.forEach(btn => {
     })
 });
 
-// bottone elimina tutto:
-// eliminaButton.addEventListener("click", () => {
-//     //     filters = [];
-//     //     filterProjects()
-// })
+const buttonClear = document.getElementById("filter-none");
+buttonClear.addEventListener("click", () => {
+    buttons.forEach(btn => {
+        if (btn.classList.contains("active")) {
+            btn.classList.remove("active");
+        }
+    });
+    filters = [];
+    filterProjects();
+});
 
-// fare:
-// aggiungere x quando button is active
+const projectShape = document.querySelectorAll(".project");
+const projectPlan = document.querySelectorAll(".project-plan");
+const projectInfo = document.querySelectorAll(".project-info");
+const overlay = document.getElementById("overlay");
+
+projectShape.forEach(shape => {
+    shape.addEventListener("click", () => {
+        projectPlan.forEach(plan => {
+            if (plan.id === `${shape.id}-plan`) {
+                plan.classList.add("show-info");
+                shape.classList.add("hide");
+                overlay.classList.add("over");
+            }
+        })
+        projectInfo.forEach(info => {
+            if (info.id === `${shape.id}-info`) {
+                info.classList.add("show-info");
+                shape.classList.add("hide");
+            }
+        })
+    })
+})
+
+overlay.addEventListener("click", () => {
+    projectShape.forEach(shape => {
+        shape.classList.remove("hide");
+    })
+    projectInfo.forEach(info => {
+        info.classList.remove("show-info");
+    })
+    projectPlan.forEach(plan => {
+        plan.classList.remove("show-info");
+    })
+    overlay.classList.remove("over");
+})
+
+
+
+
 
 // studiare switch
 
