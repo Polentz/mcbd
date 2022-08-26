@@ -1,0 +1,73 @@
+:root {
+    --doc-height: 100%;
+    --grey: #e5e3e1;
+    --light-orange: #ffc793;
+    --dark-orange: #ec9b50;
+    --txt-color: #000000;
+    --bg-color: #ffffff;
+}
+
+body {
+    font-family: halyard-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .8rem;
+    overflow: hidden;
+    padding: 40px;
+}
+
+/* filters */
+
+.filters-list {
+    position: relative;
+    z-index: 2;
+}
+
+input[type="radio"] {
+    visibility: hidden;
+}
+
+.filters {
+    width: fit-content;
+    font-weight: 500;
+}
+
+.filters label {
+    color: var(--grey);
+    cursor: pointer;
+}
+
+.filters label.active {
+    color: var(--light-orange);
+}
+
+.filters label:hover {
+    color: var(--txt-color);
+}
+
+/* filtered elements (projects) */
+
+.projects {
+    width: 100vw;
+    height: var(--doc-height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr); */
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project {
+    fill: var(--txt-color);
+    max-height: 88px;
+}
+
+.project.colorMe {
+    fill: var(--light-orange);
+}
