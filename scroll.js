@@ -35,4 +35,20 @@ window.addEventListener("scroll", () => {
     if (elementOpen.classList.contains("open")) {
         elementOpen.classList.remove("open");
     }
+});
+
+const pageInfo = document.querySelector(".filters--page");
+const section = document.querySelector(".info-section");
+
+const inViewport = (element) => {
+    const elementRect = element.getBoundingClientRect();
+    return (elementRect.top < innerHeight && elementRect.bottom > 0);
+};
+
+window.addEventListener("scroll", () => {
+    if (inViewport(section)) {
+        pageInfo.style.position = "absolute";
+    } else {
+        pageInfo.style.position = "fixed";
+    }
 })

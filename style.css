@@ -10,7 +10,8 @@
     --bg-color: #ffffff;
     --nav: 64px;
     --copy-txt: .95rem;
-    --large-txt: calc(2vw + 4rem);
+    --medium-txt: 1.5rem;
+    --large-txt: calc(2vw + 3rem);
     --project-size: calc(3vw + 2rem);
 }
 
@@ -45,7 +46,7 @@ nav {
     color: var(--grey);
     font-weight: 500;
     font-size: 1.2rem;
-    z-index: 3;
+    z-index: 5;
 }
 
 header {
@@ -75,7 +76,7 @@ nav h1 {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 4;
     background-color: white;
     opacity: 0;
     pointer-events: none;
@@ -113,10 +114,6 @@ footer a:hover {
     color: var(--orange);
 }
 
-/* footer a:hover~footer p:nth-of-type(2) {
-    color: var(--grey);
-} */
-
 .contact {
     width: 100%;
     height: 30%;
@@ -125,7 +122,7 @@ footer a:hover {
     left: 0;
     background-color: var(--light-grey);
     border-top: 1px solid var(--light-orange);
-    z-index: 999;
+    z-index: 9;
     padding: 40px;
     display: flex;
     justify-content: space-between;
@@ -225,7 +222,6 @@ footer a:hover {
 
 .filter-btn:hover {
     color: var(--orange);
-    /* padding-left: 1rem; */
 }
 
 .filter-clear {
@@ -281,7 +277,7 @@ footer a:hover {
 }
 
 .project.initAnimate {
-    animation: scaleOut 4s ease-out 1 running;
+    animation: scaleOut 3s ease-out 1 running;
 }
 
 .project,
@@ -293,7 +289,7 @@ footer a:hover {
 .project-plan,
 .project-info {
     display: none;
-    z-index: 3;
+    z-index: 5;
 }
 
 .project-plan {
@@ -516,7 +512,7 @@ footer a:hover {
 }
 
 .project.hide {
-    visibility: hidden;
+    filter: opacity(0);
     pointer-events: none;
 }
 
@@ -570,7 +566,7 @@ footer a:hover {
 
 .project-plan--lv {
     position: relative;
-    z-index: 3;
+    z-index: 5;
 }
 
 .project-images--lv {
@@ -604,12 +600,42 @@ footer a:hover {
 
 /* pages */
 
+.page-title {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    color: var(--bg-color);
+    mix-blend-mode: difference;
+    z-index: 3;
+}
+
+.filters--page {
+    height: auto;
+    justify-content: flex-start;
+    gap: .5rem;
+    overflow-y: hidden;
+    z-index: 1;
+}
+
+.filter-this {
+    color: var(--grey);
+}
+
+.text-section,
 .info-section {
-    min-height: 100vh;
     position: relative;
     display: flex;
     justify-content: flex-end;
     padding: 40px;
+}
+
+.text-section {
+    min-height: 100vh;
+}
+
+.info-section {
+    min-height: auto;
+    margin-bottom: 10rem
 }
 
 .project-siteplan {
@@ -623,45 +649,38 @@ footer a:hover {
     transform: scale(1.5);
 }
 
-.page-footer {
-    mix-blend-mode: difference;
-}
-
-.page-title {
-    position: fixed;
-    bottom: 40px;
-    left: 40px;
-    color: var(--bg-color);
-}
-
-.page-footer a {
-    color: var(--bg-color);
-    font-weight: 500;
-}
-
-.project-copy {
+.text-section-wrapper,
+.info-section-wrapper {
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
 }
 
-.project-copy p {
-    font-size: 1.5rem;
+.text-section-wrapper p {
+    font-size: var(--medium-txt);
 }
 
-.project-copy h4 {
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-.project-copy p:first-of-type {
+.text-section-wrapper p:first-of-type {
     margin-top: var(--nav);
     text-indent: 10rem;
 }
 
+.info-block {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.info-block p {
+    width: 50%;
+    font-size: var(--copy-txt);
+    font-weight: 400;
+}
+
 .vertical-container {
     padding: 2.5rem;
+    position: relative;
+    z-index: 2;
 }
 
 .vertical-wrapper {
@@ -689,6 +708,8 @@ footer a:hover {
     border-top: 1px solid var(--light-orange);
     border-bottom: 1px solid var(--light-orange);
     background-color: var(--light-grey);
+    position: relative;
+    z-index: 2;
 }
 
 .horizontal-wrapper {
@@ -742,4 +763,13 @@ footer a:hover {
 .reveal.appear {
     transform: translateY(0);
     opacity: 1;
+}
+
+.footer--page a {
+    color: var(--txt-color);
+    font-weight: 500;
+}
+
+.footer--page a:hover {
+    color: var(--grey);
 }
