@@ -5,6 +5,30 @@ const documentHeight = () => {
 window.addEventListener("resize", documentHeight)
 documentHeight();
 
+// click events
+const btnOpen = document.getElementById("contact-btn");
+const btnClose = document.querySelector(".close-btn")
+const elementOpen = document.getElementById("contact");
+
+btnOpen.addEventListener("click", () => {
+    if (elementOpen.classList.contains("open")) {
+        elementOpen.classList.remove("open");
+    } else {
+        elementOpen.classList.add("open");
+    }
+});
+
+btnClose.addEventListener("click", () => {
+    elementOpen.classList.remove("open");
+});
+
+window.addEventListener("scroll", () => {
+    if (elementOpen.classList.contains("open")) {
+        elementOpen.classList.remove("open");
+    }
+})
+
+// filters
 let filters = [];
 
 const filterProjects = () => {
@@ -29,17 +53,24 @@ const filterProjects = () => {
     for (let i = 0; i < filteredProjects.length; i++) {
         const project = filteredProjects[i];
         const selectedProject = document.getElementById(project.id);
-        selectedProject.classList.add("filtered")
+        selectedProject.classList.add("filtered");
+        if (selectedProject.classList.contains("project-wrapper--lv")) {
+            selectedProject.style.display = "flex";
+        }
     }
     for (let i = 0; i < remainingProjects.length; i++) {
         const project = remainingProjects[i];
         const selectedProject = document.getElementById(project.id);
-        selectedProject.classList.remove("filtered")
+        selectedProject.classList.remove("filtered");
+        if (selectedProject.classList.contains("project-wrapper--lv")) {
+            selectedProject.style.display = filters.length > 0 ? "none" : "flex";
+        }
     }
 
 }
 
 const buttons = document.querySelectorAll(".filter-btn");
+
 buttons.forEach(btn => {
     btn.addEventListener("click", () => {
         if (btn.classList.contains("active")) {
@@ -50,11 +81,11 @@ buttons.forEach(btn => {
             btn.classList.add("active");
             filters.push({ category: btn.dataset.categories, value: btn.id });
         }
-        filterProjects()
+        filterProjects();
     })
 });
 
-const buttonClear = document.getElementById("filter-none");
+const buttonClear = document.getElementById("filter-clear");
 buttonClear.addEventListener("click", () => {
     buttons.forEach(btn => {
         if (btn.classList.contains("active")) {
@@ -65,6 +96,7 @@ buttonClear.addEventListener("click", () => {
     filterProjects();
 });
 
+const projectDiv = document.querySelectorAll(".project-wrapper--lv");
 const projectShape = document.querySelectorAll(".project");
 const projectPlan = document.querySelectorAll(".project-plan");
 const projectInfo = document.querySelectorAll(".project-info");
@@ -72,12 +104,30 @@ const overlay = document.getElementById("overlay");
 
 projectShape.forEach(shape => {
     shape.addEventListener("click", () => {
+        projectDiv.forEach(div => {
+            if (shape.id === `${div.id}-shape`) {
+                projectPlan.forEach(plan => {
+                    if (plan.id === `${div.id}-plan`) {
+                        console.log(div.id, div)
+                        plan.classList.add("show-info");
+                        shape.classList.add("hide");
+                    }
+                    overlay.classList.add("over");
+                })
+                projectInfo.forEach(info => {
+                    if (info.id === `${div.id}-info`) {
+                        info.classList.add("show-info");
+                        shape.classList.add("hide");
+                    }
+                })
+            }
+        })
         projectPlan.forEach(plan => {
             if (plan.id === `${shape.id}-plan`) {
                 plan.classList.add("show-info");
                 shape.classList.add("hide");
-                overlay.classList.add("over");
             }
+            overlay.classList.add("over");
         })
         projectInfo.forEach(info => {
             if (info.id === `${shape.id}-info`) {
@@ -85,6 +135,21 @@ projectShape.forEach(shape => {
                 shape.classList.add("hide");
             }
         })
+    })
+})
+
+projectPlan.forEach(plan => {
+    plan.addEventListener("click", () => {
+        projectShape.forEach(shape => {
+            shape.classList.remove("hide");
+        })
+        projectInfo.forEach(info => {
+            info.classList.remove("show-info");
+        })
+        plan.classList.remove("show-info");
+        if (overlay) {
+            overlay.classList.remove("over");
+        }
     })
 })
 
@@ -99,20 +164,20 @@ overlay.addEventListener("click", () => {
         plan.classList.remove("show-info");
     })
     overlay.classList.remove("over");
+});
+
+// animation
+window.addEventListener("load", () => {
+    if (typeof (localStorage.getItem("animation")) != null && localStorage.getItem("animation") != "true") {
+        for (let i = 0; i < projectShape.length; i++) {
+            const el = projectShape[i];
+            el.classList.add("initAnimate")
+            localStorage.setItem("animation", "true");
+        }
+    } else {
+        for (let i = 0; i < projectShape.length; i++) {
+            const el = projectShape[i];
+            el.classList.remove("initAnimate")
+        }
+    }
 })
-
-
-
-
-
-// studiare switch
-
-// switch (categories) {
-//     case categories.elements: {
-//         const filteredProjects = projects.filter((p) => p.elements.includes(filter))
-//         for (let index = 0; index < filteredProjects.length; index++) {
-//             const element = filteredProjects[index];
-//             // element aggiungi classe per farlo visibile nel dom
-//         }
-//     }
-// }

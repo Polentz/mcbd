@@ -44,7 +44,7 @@ const projects = [
         id: "00-bio",
         name: "00 BIO",
         fonction: [fonction.culturel],
-        action: [fonction.construction],
+        action: [action.construction],
         materiaux: [materiaux.bois],
         elements: [elements.interieur, elements.exterieur]
     },
@@ -52,7 +52,7 @@ const projects = [
         id: "04-stm",
         name: "04 STM",
         fonction: [fonction.education],
-        action: [fonction.concours],
+        action: [action.concours],
         materiaux: [materiaux.vegetal],
         elements: [elements.exterieur]
     },
@@ -60,7 +60,7 @@ const projects = [
         id: "05-gol",
         name: "05 GOL",
         fonction: [fonction.logement],
-        action: [fonction.concours],
+        action: [action.concours],
         materiaux: [materiaux.beton],
         elements: [elements.interieur, elements.exterieur]
     },
@@ -68,7 +68,7 @@ const projects = [
         id: "07-bot",
         name: "07 BOT",
         fonction: [fonction.culturel],
-        action: [fonction.concours],
+        action: [action.concours],
         materiaux: [materiaux.beton, materiaux.vegetal],
         elements: [elements.interieur, elements.exterieur]
     },
@@ -76,7 +76,7 @@ const projects = [
         id: "07-vsc",
         name: "07 VSC",
         fonction: [fonction.logement],
-        action: [fonction.transformation],
+        action: [action.transformation],
         materiaux: [materiaux.bois],
         elements: [elements.interieur, elements.exterieur]
     },
@@ -103,6 +103,14 @@ const projects = [
         action: [action.concours],
         materiaux: [materiaux.bois],
         elements: [elements.interieur, elements.exterieur]
+    },
+    {
+        id: "15-chp",
+        name: "15 CHP",
+        fonction: [fonction.logement],
+        action: [action.transformation],
+        materiaux: [materiaux.mixte],
+        elements: [elements.interieur]
     },
     {
         id: "15-meg",
@@ -132,14 +140,6 @@ const projects = [
         id: "18-adr",
         name: "18 ADR",
         fonction: [fonction.logement, fonction.bureaux],
-        action: [action.transformation],
-        materiaux: [materiaux.mixte],
-        elements: [elements.interieur]
-    },
-    {
-        id: "18-chp",
-        name: "18 CHP",
-        fonction: [fonction.logement],
         action: [action.transformation],
         materiaux: [materiaux.mixte],
         elements: [elements.interieur]
