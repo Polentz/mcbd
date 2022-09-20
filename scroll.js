@@ -51,4 +51,18 @@ window.addEventListener("scroll", () => {
     } else {
         pageInfo.style.position = "fixed";
     }
-})
+});
+
+// const history = document.getElementById("history-js");
+// window.onload = () => {
+//     history.addEventListener("click", () => {
+//         e.preventDefault();
+//         if (history.state == null) {
+//             const url = history.getAttribute("href");
+//             window.history.pushState(state, '', url);
+//             // document.location.href = url;
+//         } else if (history.state != null) {
+//             window.history.back();
+//         }
+//     })
+// }
