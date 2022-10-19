@@ -16,7 +16,9 @@ window.addEventListener("scroll", revealOnScroll);
 
 // click events
 const btnOpen = document.getElementById("contact-btn");
-const btnClose = document.querySelector(".close-btn")
+const btnClose = document.querySelector(".close-btn");
+const menuBtn = document.querySelector("nav h1");
+const menuOpen = document.querySelectorAll("nav a");
 const elementOpen = document.getElementById("contact");
 
 btnOpen.addEventListener("click", () => {
@@ -31,27 +33,36 @@ btnClose.addEventListener("click", () => {
     elementOpen.classList.remove("open");
 });
 
+menuBtn.addEventListener("click", () => {
+    menuOpen.forEach(element => {
+        element.classList.toggle("open-menu");
+    });
+});
+
 window.addEventListener("scroll", () => {
     if (elementOpen.classList.contains("open")) {
         elementOpen.classList.remove("open");
     }
 });
 
-const pageInfo = document.querySelector(".filters--page");
-const section = document.querySelector(".info-section");
+// const pageInfo = document.querySelector(".filters--page");
+// const section = document.querySelector(".info-section");
 
-const inViewport = (element) => {
-    const elementRect = element.getBoundingClientRect();
-    return (elementRect.top < innerHeight && elementRect.bottom > 0);
-};
+// const inViewport = (element) => {
+//     const elementRect = element.getBoundingClientRect();
+//     return (elementRect.top < innerHeight && elementRect.bottom > 0);
+// };
 
-window.addEventListener("scroll", () => {
-    if (inViewport(section)) {
-        pageInfo.style.position = "absolute";
-    } else {
-        pageInfo.style.position = "fixed";
-    }
-});
+// window.addEventListener("scroll", () => {
+//     if (inViewport(section)) {
+//         pageInfo.style.position = "absolute";
+//     } else {
+//         pageInfo.style.position = "fixed";
+//     }
+// });
+
+
+
 
 // const history = document.getElementById("history-js");
 // window.onload = () => {

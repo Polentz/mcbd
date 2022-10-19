@@ -9,6 +9,11 @@ documentHeight();
 const btnOpen = document.getElementById("contact-btn");
 const btnClose = document.querySelector(".close-btn")
 const elementOpen = document.getElementById("contact");
+const menuBtn = document.querySelector("nav h1");
+const menuOpen = document.querySelectorAll("nav a");
+const filterBtn = document.querySelector(".always-visible");
+const filterUi = document.querySelector(".always-visible svg");
+const filterOpen = document.querySelectorAll(".filter-list:not(.filter-list.always-visible)");
 
 btnOpen.addEventListener("click", () => {
     if (elementOpen.classList.contains("open")) {
@@ -26,6 +31,19 @@ window.addEventListener("scroll", () => {
     if (elementOpen.classList.contains("open")) {
         elementOpen.classList.remove("open");
     }
+})
+
+menuBtn.addEventListener("click", () => {
+    menuOpen.forEach(element => {
+        element.classList.toggle("open-menu");
+    });
+});
+
+filterBtn.addEventListener("click", () => {
+    filterOpen.forEach(element => {
+        element.classList.toggle("open-filter");
+    });
+    filterUi.classList.toggle("rotate")
 })
 
 // filters
@@ -54,19 +72,20 @@ const filterProjects = () => {
         const project = filteredProjects[i];
         const selectedProject = document.getElementById(project.id);
         selectedProject.classList.add("filtered");
-        if (selectedProject.classList.contains("project-wrapper--lv")) {
-            selectedProject.style.display = "flex";
-        }
+        // if (selectedProject.classList.contains("project-wrapper--lv")) {
+        //     selectedProject.style.display = "flex";
+        // }
+        selectedProject.style.display = "flex";
     }
     for (let i = 0; i < remainingProjects.length; i++) {
         const project = remainingProjects[i];
         const selectedProject = document.getElementById(project.id);
         selectedProject.classList.remove("filtered");
-        if (selectedProject.classList.contains("project-wrapper--lv")) {
-            selectedProject.style.display = filters.length > 0 ? "none" : "flex";
-        }
+        // if (selectedProject.classList.contains("project-wrapper--lv")) {
+        //     selectedProject.style.display = filters.length > 0 ? "none" : "flex";
+        // }
+        selectedProject.style.display = filters.length > 0 ? "none" : "flex";
     }
-
 }
 
 const buttons = document.querySelectorAll(".filter-btn");
@@ -108,7 +127,7 @@ projectShape.forEach(shape => {
             if (shape.id === `${div.id}-shape`) {
                 projectPlan.forEach(plan => {
                     if (plan.id === `${div.id}-plan`) {
-                        console.log(div.id, div)
+                        // console.log(div.id, div)
                         plan.classList.add("show-info");
                         shape.classList.add("hide");
                     }
@@ -167,17 +186,24 @@ overlay.addEventListener("click", () => {
 });
 
 // animation
-window.addEventListener("load", () => {
-    if (typeof (localStorage.getItem("animation")) != null && localStorage.getItem("animation") != "true") {
-        for (let i = 0; i < projectShape.length; i++) {
-            const el = projectShape[i];
-            el.classList.add("initAnimate")
-            localStorage.setItem("animation", "true");
-        }
-    } else {
-        for (let i = 0; i < projectShape.length; i++) {
-            const el = projectShape[i];
-            el.classList.remove("initAnimate")
-        }
-    }
-})
+// window.addEventListener("load", () => {
+//     if (typeof (localStorage.getItem("animation")) != null && localStorage.getItem("animation") != "true") {
+//         for (let i = 0; i < projectShape.length; i++) {
+//             const el = projectShape[i];
+//             el.classList.add("initAnimate");
+//             localStorage.setItem("animation", "true");
+//         }
+//     } else {
+//         for (let i = 0; i < projectShape.length; i++) {
+//             const el = projectShape[i];
+//             el.classList.remove("initAnimate");
+//         }
+//     }
+// })
+
+// window.addEventListener("load", () => {
+//     for (let index = 0; index < projectShape.length; index++) {
+//         const element = projectShape[index];
+//         element.classList.add("initAnimate");
+//     }
+// })
