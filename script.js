@@ -182,10 +182,10 @@ if (buttons, buttonClear) {
             projectInfo.forEach(info => {
                 info.classList.remove("show-info");
             })
-            plan.classList.remove("show-info");
-            if (overlay) {
-                overlay.classList.remove("over");
-            }
+            projectPlan.forEach(plan => {
+                plan.classList.remove("show-info");
+            })
+            overlay.classList.remove("over");
         })
     })
 
