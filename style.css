@@ -1,14 +1,15 @@
 :root {
     --doc-height: 100%;
     /* --grey: #efefef; */
-    --grey: #d8d6d5;
+    /* --grey: #d8d6d5; */
+    --grey: #c2c2c2;
     --light-grey: #efefef;
     --orange: #ec9b50;
     /* --orange: #2a24d5; */
     --light-orange: #ffc793;
     --txt-color: #000000;
     --bg-color: #ffffff;
-    --nav: 64px;
+    --nav: 5rem;
     --general-margin: 2.5rem;
     --copy-txt: .95rem;
     --medium-txt: 1.5rem;
@@ -40,23 +41,18 @@ h2 {
     margin-bottom: -4px;
 }
 
-header,
-nav {
+header {
     position: fixed;
     top: var(--general-margin);
-    height: var(--nav);
+    right: var(--general-margin);
     color: var(--grey);
     font-weight: 500;
     font-size: 1.2rem;
     z-index: 5;
 }
 
-header {
-    left: var(--general-margin);
-}
-
 nav {
-    right: var(--general-margin);
+    line-height: 1;
 }
 
 nav a:first-of-type {
@@ -116,25 +112,24 @@ footer a:hover {
     color: var(--orange);
 }
 
-.contact {
+.slide-section {
     width: 100%;
-    height: 30%;
     position: fixed;
-    bottom: 0;
     left: 0;
+    bottom: 0;
     background-color: var(--light-grey);
     border-top: 1px solid var(--light-orange);
+    transform: translateY(100%);
     z-index: 9;
     padding: var(--general-margin);
     display: flex;
     justify-content: space-between;
     font-size: var(--copy-txt);
-    transform: translateY(100%);
     opacity: 0;
     transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.contact::after {
+.slide-section::after {
     content: "";
     width: 100%;
     height: 25%;
@@ -147,13 +142,40 @@ footer a:hover {
     transition: opacity 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.contact.open {
+.slide-section.open {
     transform: translateY(0);
     opacity: 1;
 }
 
-.contact.open::after {
+.slide-section.open::after {
     opacity: 1;
+}
+
+.bureau {
+    height: 60vh;
+    gap: var(--nav);
+    overflow-y: scroll;
+}
+
+.bureau::-webkit-scrollbar {
+    display: none;
+}
+
+.contact {
+    height: 30vh;
+}
+
+.bureau-block {
+    height: fit-content;
+}
+
+.bureau-block p {
+    font-size: var(--medium-txt);
+    margin-bottom: var(--general-margin);
+}
+
+.bureau-block p:last-child {
+    margin-bottom: 30vh;
 }
 
 .contact-block p:nth-child(1),
@@ -174,7 +196,10 @@ footer a:hover {
     height: 100%;
 }
 
-.close-btn {
+.bureau-close,
+.contact-close {
+    position: sticky;
+    top: 0;
     cursor: pointer;
 }
 
@@ -197,10 +222,6 @@ footer a:hover {
 .filters::-webkit-scrollbar {
     display: none;
 }
-
-/* .filter-list:first-of-type {
-    margin-top: var(--nav);
-} */
 
 .filter-list {
     width: fit-content;
@@ -303,7 +324,7 @@ footer a:hover {
 
 .project-plan {
     transform: scale(2);
-    cursor: -webkit-image-set(url(assets/cursor-close.svg) 2x), crosshair;
+    /* cursor: -webkit-image-set(url(assets/cursor-close.svg) 2x), crosshair; */
 }
 
 .cls-1,
@@ -361,12 +382,20 @@ footer a:hover {
     stroke: var(--txt-color);
 }
 
-.project-wrapper:nth-of-type(odd)>.project:hover {
+/* .project-wrapper:nth-of-type(odd)>.project:hover {
     transform: translate(-20px, 5px);
 }
 
 .project-wrapper:nth-of-type(even)>.project:hover {
     transform: translate(15px, -10px);
+} */
+
+.project-wrapper:nth-of-type(odd)>.project:hover {
+    transform: scale(1.5);
+}
+
+.project-wrapper:nth-of-type(even)>.project:hover {
+    transform: scale(1.5);
 }
 
 .project-wrapper:nth-of-type(1)>.project,
@@ -531,12 +560,13 @@ footer a:hover {
 }
 
 .project.filtered {
-    fill: var(--light-orange);
+    /* fill: var(--light-orange); */
+    transform: scale(1.5);
 }
 
-.project-wrapper--lv.filtered svg {
+/* .project-wrapper--lv.filtered svg {
     fill: var(--light-orange);
-}
+} */
 
 .project.hide {
     filter: opacity(0);
@@ -588,7 +618,7 @@ footer a:hover {
 }
 
 .project--lv:hover {
-    transform: translatex(-20px);
+    transform: scale(1.5);
 }
 
 .project-plan--lv {
@@ -642,6 +672,7 @@ footer a:hover {
 }
 
 .filter-this {
+    font-weight: 500;
     color: var(--grey);
 }
 
@@ -684,7 +715,7 @@ footer a:hover {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: calc(var(--nav)/2);
 }
 
 .text-section-wrapper p {
@@ -698,7 +729,7 @@ footer a:hover {
 
 .info-block {
     display: flex;
-    gap: 2.5rem;
+    gap: calc(var(--nav)/2);
 }
 
 .info-block p {
@@ -708,7 +739,7 @@ footer a:hover {
 }
 
 .vertical-container {
-    padding: 2.5rem;
+    padding: var(--general-margin);
     position: relative;
     z-index: 2;
 }
@@ -786,6 +817,7 @@ footer a:hover {
 
     nav {
         font-size: var(--copy-txt);
+        line-height: 1.2;
     }
 
     nav h1 {
@@ -826,17 +858,16 @@ footer a:hover {
         transform: rotate(0deg);
     }
 
+    /* problema qui con justify-content: flex-end; // solved (?) con position: sticky; per .filtered*/
+
     .projects {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-end;
         align-items: flex-end;
     }
 
-    /* problema qui con justify-content: flex-end; */
-
     .project-wrapper {
-        /* width: 100%; */
+        width: 100%;
         position: relative;
         padding: var(--general-margin);
     }
@@ -849,7 +880,9 @@ footer a:hover {
 
     .project.filtered {
         width: 30vw;
-        margin-left: 4rem;
+        position: sticky;
+        fill: var(--light-orange);
+        transform: none;
     }
 
     .cls-1,
@@ -903,7 +936,7 @@ footer a:hover {
     }
 
     .project--lv {
-        width: 50%;
+        width: 33%;
         height: auto;
     }
 
@@ -927,17 +960,29 @@ footer a:hover {
         background-color: var(--txt-color);
     }
 
-    .contact {
-        height: auto;
+    .slide-section {
         flex-direction: column;
         gap: calc(var(--general-margin)*2);
+    }
+
+    .bureau {
+        height: var(--doc-height);
+    }
+
+    .contact {
+        height: auto;
+    }
+
+    .bureau .contact-block {
+        height: var(--doc-height);
     }
 
     .logo {
         height: 16vh;
     }
 
-    .close-btn {
+    .contact-close,
+    .bureau-close {
         position: absolute;
         top: var(--general-margin);
         right: var(--general-margin);
@@ -950,7 +995,8 @@ footer a:hover {
     /* pages */
 
     .project-siteplan {
-        left: -50%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .text-section,
@@ -965,8 +1011,9 @@ footer a:hover {
         width: 100%;
     }
 
-    .text-section-wrapper p:first-of-type {
-        text-indent: 50%;
+    .text-section-wrapper p:first-of-type,
+    .text-section-wrapper p {
+        text-indent: 33%;
     }
 
     .text-section-wrapper p {
@@ -978,7 +1025,7 @@ footer a:hover {
     }
 
     .vertical-wrapper {
-        gap: 2.5rem;
+        gap: calc(var(--nav)/2);
     }
 
     .vertical-wrapper img,
@@ -993,6 +1040,7 @@ footer a:hover {
     }
 
     .info-section {
+        display: block;
         margin-top: var(--nav);
         gap: var(--general-margin);
     }
@@ -1003,14 +1051,19 @@ footer a:hover {
     }
 
     .filters--page {
-        height: fit-content;
-        position: sticky;
-        top: var(--general-margin);
+        position: static;
         padding: 0;
+        margin-bottom: calc(var(--nav)/2);
     }
 
     .filters--page .filter-list {
         display: block;
+    }
+
+    /* avoid over effect on mobile */
+
+    .filter-btn.active:hover {
+        color: var(--orange);
     }
 
     footer a:hover,
@@ -1019,10 +1072,15 @@ footer a:hover {
     }
 
     .contact-block a:hover,
-    .filter-btn.active:hover,
     .filter-clear p:hover,
     .project-info a:hover,
     .footer--page a:hover {
         color: var(--txt-color);
+    }
+
+    .project-wrapper:nth-of-type(odd)>.project:hover,
+    .project-wrapper:nth-of-type(even)>.project:hover,
+    .project--lv:hover {
+        transform: none;
     }
 }

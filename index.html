@@ -34,14 +34,13 @@
 </head>
 
 <body class="home" onload="history.scrollRestoration = 'manual'">
-    <!-- <header>
-        <h1>mcbd</h1>
-    </header> -->
-    <nav>
-        <h1>mcbd</h1>
-        <a href="">bureau</a>
-        <a id="contact-btn">contact</a>
-    </nav>
+    <header>
+        <nav>
+            <h1>mcbd</h1>
+            <a id="bureau-btn">bureau</a>
+            <a id="contact-btn">contact</a>
+        </nav>
+    </header>
 
     <section class="filters">
         <ul class="filter-list">
@@ -567,7 +566,7 @@
                     <p>type of building</p>
                     <p>City</p>
                 </div>
-                <a href="08-lul.html">more about this project</a>
+                <a class="project-link" href="08-lul.html">more about this project</a>
                 <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.34326 4.5H0.343262M4.34318 0.5L8.23227 4.5L4.34318 8.5" />
                 </svg>
@@ -684,7 +683,7 @@
                     <p>type of building</p>
                     <p>City</p>
                 </div>
-                <a href="">more about this project</a>
+                <a class="project-link" href="">more about this project</a>
                 <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.34326 4.5H0.343262M4.34318 0.5L8.23227 4.5L4.34318 8.5" />
                 </svg>
@@ -2043,7 +2042,25 @@
 
     <section id="overlay" class="overlay"></section>
 
-    <section id="contact" class="contact">
+    <section id="bureau" class="slide-section bureau">
+        <div class="bureau-block">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ut cumque architecto et inventore
+                asperiores deserunt nisi repellendus adipisci rem dolorem suscipit quas, illo, cum voluptatem, excepturi
+                odio fugit mollitia aut. Aspernatur, quos tempore! Nisi modi eius dolore repudiandae architecto velit
+                at. Perferendis dignissimos vel nobis facere tenetur pariatur vero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ut cumque architecto et inventore
+                asperiores deserunt nisi repellendus adipisci rem dolorem suscipit quas, illo, cum voluptatem, excepturi
+                odio fugit mollitia aut. Aspernatur, quos tempore! Nisi modi eius dolore repudiandae architecto velit
+                at. Perferendis dignissimos vel nobis facere tenetur pariatur vero!</p>
+        </div>
+        <a class="bureau-close">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 1L1 9M9 9L1 1" stroke="black" />
+            </svg>
+        </a>
+    </section>
+
+    <section id="contact" class="slide-section contact">
         <div class="logo">
             <svg viewBox="0 0 68 88" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -2075,7 +2092,7 @@
         <div class="contact-block">
             <a href="mailto:mcbd@mcbd.ch">mcbd@mcbd.ch</a>
         </div>
-        <a class="close-btn">
+        <a class="contact-close">
             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 1L1 9M9 9L1 1" stroke="black" />
             </svg>

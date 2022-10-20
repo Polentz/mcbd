@@ -1,3 +1,9 @@
+const scrollFunctions = () => {
+    window.addEventListener("scroll", revealOnScroll);
+    hideOnScroll(contactElement);
+    hideOnScroll(bureauElement);
+}
+
 const revealOnScroll = () => {
     const reveals = document.querySelectorAll(".reveal");
     for (let i = 0; i < reveals.length; i++) {
@@ -12,38 +18,17 @@ const revealOnScroll = () => {
         }
     }
 }
-window.addEventListener("scroll", revealOnScroll);
 
-// click events
-const btnOpen = document.getElementById("contact-btn");
-const btnClose = document.querySelector(".close-btn");
-const menuBtn = document.querySelector("nav h1");
-const menuOpen = document.querySelectorAll("nav a");
-const elementOpen = document.getElementById("contact");
-
-btnOpen.addEventListener("click", () => {
-    if (elementOpen.classList.contains("open")) {
-        elementOpen.classList.remove("open");
-    } else {
-        elementOpen.classList.add("open");
-    }
-});
-
-btnClose.addEventListener("click", () => {
-    elementOpen.classList.remove("open");
-});
-
-menuBtn.addEventListener("click", () => {
-    menuOpen.forEach(element => {
-        element.classList.toggle("open-menu");
+const hideOnScroll = (element) => {
+    window.addEventListener("scroll", () => {
+        if (element.classList.contains("open")) {
+            element.classList.remove("open");
+        }
     });
-});
 
-window.addEventListener("scroll", () => {
-    if (elementOpen.classList.contains("open")) {
-        elementOpen.classList.remove("open");
-    }
-});
+}
+
+scrollFunctions();
 
 // const pageInfo = document.querySelector(".filters--page");
 // const section = document.querySelector(".info-section");
@@ -60,9 +45,6 @@ window.addEventListener("scroll", () => {
 //         pageInfo.style.position = "fixed";
 //     }
 // });
-
-
-
 
 // const history = document.getElementById("history-js");
 // window.onload = () => {
