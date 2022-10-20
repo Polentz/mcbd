@@ -364,6 +364,7 @@ footer a:hover {
 .project-info-text p {
     font-weight: 500;
     font-size: var(--copy-txt);
+    white-space: nowrap;
 }
 
 .project-info a {
@@ -921,6 +922,10 @@ footer a:hover {
 
     .project-info-text {
         flex-wrap: wrap;
+    }
+
+    .project-info-text p {
+        white-space: normal;
     }
 
     .projects--lv {
