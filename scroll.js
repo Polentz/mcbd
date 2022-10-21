@@ -1,7 +1,7 @@
 const scrollFunctions = () => {
     window.addEventListener("scroll", revealOnScroll);
-    hideOnScroll(contactElement);
-    hideOnScroll(bureauElement);
+    // hideOnScroll(contactElement);
+    // hideOnScroll(bureauElement);
 }
 
 const revealOnScroll = () => {

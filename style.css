@@ -883,6 +883,7 @@ footer a:hover {
         width: 30vw;
         position: sticky;
         fill: var(--light-orange);
+        margin-left: 25%;
         transform: none;
     }
 
@@ -938,6 +939,10 @@ footer a:hover {
         flex-direction: column-reverse;
         align-items: flex-end;
         gap: var(--general-margin);
+    }
+
+    .project-wrapper--lv.filtered svg {
+        fill: var(--light-orange);
     }
 
     .project--lv {
