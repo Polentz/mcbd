@@ -216,10 +216,3 @@ if (buttons, buttonClear) {
 //         }
 //     }
 // })
-
-// window.addEventListener("load", () => {
-//     for (let index = 0; index < projectShape.length; index++) {
-//         const element = projectShape[index];
-//         element.classList.add("initAnimate");
-//     }
-// })

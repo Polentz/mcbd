@@ -7,7 +7,7 @@
     --orange: #ec9b50;
     /* --orange: #2a24d5; */
     --light-orange: #ffc793;
-    --txt-color: #000000;
+    --txt-color: #171a19;
     --bg-color: #ffffff;
     --nav: 5rem;
     --general-margin: 2.5rem;
@@ -16,6 +16,7 @@
     --large-txt: calc(2vw + 3rem);
     --project-size: calc(3vw + 2rem);
 }
+
 
 body {
     font-family: halyard-display, sans-serif;
@@ -27,6 +28,66 @@ body {
 
 body.home {
     overflow: hidden;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.project.animation {
+    transition: transform 0s;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) scale(15);
+}
+
+.animation-cover {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    background-color: var(--txt-color);
+    transition: background-color .5s ease-in;
+}
+
+.logo-init {
+    animation: fadeIn .8s ease-out 1 forwards;
+    transition: transform 1s ease-in;
+}
+
+.logo-init svg {
+    width: calc(var(--large-txt)*2);
+    display: block;
+    fill: var(--bg-color);
+    margin: 1rem;
+}
+
+.logo-name {
+    position: relative;
+}
+
+.logo-name g {
+    transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.logo-name g:first-of-type {
+    transform: translateX(-100%);
+}
+
+.logo-name g:last-of-type {
+    transform: translateX(100%);
 }
 
 a {
@@ -194,6 +255,7 @@ footer a:hover {
 
 .logo svg {
     height: 100%;
+    fill: var(--txt-color);
 }
 
 .bureau-close,
@@ -201,6 +263,11 @@ footer a:hover {
     position: sticky;
     top: 0;
     cursor: pointer;
+}
+
+.bureau-close svg,
+.contact-close svg {
+    stroke: var(--txt-color);
 }
 
 /* filters */
@@ -270,44 +337,10 @@ footer a:hover {
 
 /* projects */
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes scaleIn {
-    0% {
-        transform: scale(0);
-        z-index: 2;
-    }
-
-    98% {
-        transform: scale(1);
-        z-index: 2;
-    }
-
-    100% {
-        transform: scale(1);
-        z-index: 1;
-    }
-
-}
-
 .project {
     fill: var(--txt-color);
     transition: fill .5s cubic-bezier(0.075, 0.82, 0.165, 1), transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
     cursor: pointer;
-    animation: fadeIn 1.5s ease-out 1 forwards;
-}
-
-.project.initAnimate {
-    /* animation: scaleOut 3s ease-out 1 running; */
-    animation: scaleIn 1s ease-out 1;
 }
 
 .project,
@@ -383,19 +416,7 @@ footer a:hover {
     stroke: var(--txt-color);
 }
 
-/* .project-wrapper:nth-of-type(odd)>.project:hover {
-    transform: translate(-20px, 5px);
-}
-
-.project-wrapper:nth-of-type(even)>.project:hover {
-    transform: translate(15px, -10px);
-} */
-
-.project-wrapper:nth-of-type(odd)>.project:hover {
-    transform: scale(1.5);
-}
-
-.project-wrapper:nth-of-type(even)>.project:hover {
+.project-wrapper>.project:hover {
     transform: scale(1.5);
 }
 
@@ -589,6 +610,7 @@ footer a:hover {
     gap: var(--general-margin);
     padding: var(--general-margin);
     margin: var(--nav) 0 calc(var(--nav)*2) 0;
+    /* animation: fadeIn .8s ease-out 1 forwards; */
 }
 
 .projects--lv::after {
@@ -831,7 +853,6 @@ footer a:hover {
     }
 
     nav a {
-        /* display: none; */
         display: block;
         text-align: end;
     }
@@ -847,7 +868,6 @@ footer a:hover {
 
     .filter-list:not(.filter-list.always-visible).open-filter {
         display: block;
-        /* background-color: hsla(0, 0%, 100%, .5); */
     }
 
     .filter-list.always-visible svg {
@@ -858,8 +878,6 @@ footer a:hover {
     .filter-list.always-visible svg.rotate {
         transform: rotate(0deg);
     }
-
-    /* problema qui con justify-content: flex-end; // solved (?) con position: sticky; per .filtered*/
 
     .projects {
         position: relative;

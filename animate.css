@@ -1,0 +1,235 @@
+#logo-u-d_ts {
+    animation: logo-u-d_ts__ts 5000ms linear 1 normal forwards
+}
+
+@keyframes logo-u-d_ts__ts {
+    0% {
+        transform: translate(225.5px, 170.3774px) scale(1, 1)
+    }
+
+    60% {
+        transform: translate(225.5px, 170.3774px) scale(16, 16)
+    }
+
+    100% {
+        transform: translate(225.5px, 170.3774px) scale(16, 16)
+    }
+}
+
+#logo-u-d {
+    animation-name: logo-u-d__tt, logo-u-d_c_o;
+    animation-duration: 5000ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+}
+
+@keyframes logo-u-d__tt {
+    0% {
+        transform: translate(-109.469244px, -64.3774px)
+    }
+
+    40% {
+        transform: translate(-55px, -70px)
+    }
+
+    100% {
+        transform: translate(-55px, -70px)
+    }
+}
+
+@keyframes logo-u-d_c_o {
+    0% {
+        opacity: 1
+    }
+
+    64% {
+        opacity: 1
+    }
+
+    72% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+#logo-u-b_ts {
+    animation: logo-u-b_ts__ts 5000ms linear 1 normal forwards
+}
+
+@keyframes logo-u-b_ts__ts {
+    0% {
+        transform: translate(130.626554px, 170.3774px) scale(1, 1)
+    }
+
+    60% {
+        transform: translate(130.626554px, 170.3774px) scale(16, 16)
+    }
+
+    100% {
+        transform: translate(130.626554px, 170.3774px) scale(16, 16)
+    }
+}
+
+#logo-u-b {
+    animation-name: logo-u-b__tt, logo-u-b_c_o;
+    animation-duration: 5000ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+}
+
+@keyframes logo-u-b__tt {
+    0% {
+        transform: translate(-14.5899px, -64.3774px)
+    }
+
+    60% {
+        transform: translate(-22px, -68px)
+    }
+
+    100% {
+        transform: translate(-22px, -68px)
+    }
+}
+
+@keyframes logo-u-b_c_o {
+    0% {
+        opacity: 1
+    }
+
+    64% {
+        opacity: 1
+    }
+
+    72% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+#logo-u-c_ts {
+    animation: logo-u-c_ts__ts 5000ms linear 1 normal forwards
+}
+
+@keyframes logo-u-c_ts__ts {
+    0% {
+        transform: translate(199.5px, 124.153961px) scale(1, 1)
+    }
+
+    60% {
+        transform: translate(199.5px, 124.153961px) scale(16, 16)
+    }
+
+    100% {
+        transform: translate(199.5px, 124.153961px) scale(16, 16)
+    }
+}
+
+#logo-u-c {
+    animation-name: logo-u-c__tt, logo-u-c_c_o;
+    animation-duration: 5000ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+}
+
+@keyframes logo-u-c__tt {
+    0% {
+        transform: translate(-83.46335px, -18.153961px)
+    }
+
+    60% {
+        transform: translate(-51px, -20px)
+    }
+
+    100% {
+        transform: translate(-51px, -20px)
+    }
+}
+
+@keyframes logo-u-c_c_o {
+    0% {
+        opacity: 1
+    }
+
+    64% {
+        opacity: 1
+    }
+
+    72% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+#logo-u-m_ts {
+    animation: logo-u-m_ts__ts 5000ms linear 1 normal forwards
+}
+
+@keyframes logo-u-m_ts__ts {
+    0% {
+        transform: translate(98.5px, 124.153961px) scale(1, 1)
+    }
+
+    60% {
+        transform: translate(98.5px, 124.153961px) scale(16, 16)
+    }
+
+    100% {
+        transform: translate(98.5px, 124.153961px) scale(16, 16)
+    }
+}
+
+#logo-u-m {
+    animation-name: logo-u-m__tt, logo-u-m_c_o;
+    animation-duration: 5000ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+}
+
+@keyframes logo-u-m__tt {
+    0% {
+        transform: translate(17.536657px, -18.153961px)
+    }
+
+    60% {
+        transform: translate(-17px, -20px)
+    }
+
+    100% {
+        transform: translate(-17px, -20px)
+    }
+}
+
+@keyframes logo-u-m_c_o {
+    0% {
+        opacity: 1
+    }
+
+    64% {
+        opacity: 1
+    }
+
+    72% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
