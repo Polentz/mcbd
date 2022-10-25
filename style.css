@@ -616,7 +616,7 @@ footer a:hover {
 .projects--lv::after {
     content: "";
     width: 100%;
-    height: 25%;
+    height: 15%;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -889,7 +889,7 @@ footer a:hover {
     .projects::after {
         content: "";
         width: 100%;
-        height: 25%;
+        height: 15%;
         position: fixed;
         bottom: 0;
         right: 0;

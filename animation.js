@@ -4,12 +4,6 @@ const logoNameFirst = document.getElementById("mcbd");
 const logoNameSecond = document.getElementById("architectes");
 const cover = document.querySelector(".animation-cover");
 
-
-
-// const urlParams = new URLSearchParams(window.location.href);
-// alert(urlParams.getAll("loaded"));
-
-
 const animation = sessionStorage.getItem("animation");
 
 if (animation === "done") {
