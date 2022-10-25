@@ -108,7 +108,7 @@ if (buttons, buttonClear) {
     const projectPlan = document.querySelectorAll(".project-plan");
     const projectInfo = document.querySelectorAll(".project-info");
     const overlay = document.getElementById("overlay");
-    const projectLink = document.querySelectorAll(".project-link");
+    const projectLink = document.querySelectorAll(".project-info a");
 
     projectShape.forEach(shape => {
         shape.addEventListener("click", () => {
