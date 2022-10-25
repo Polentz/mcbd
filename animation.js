@@ -19,7 +19,7 @@ if (animation === "done") {
         element.classList.remove("animation");
     });
 } else {
-    sessionStorage.getItem("animation", "done");
+    sessionStorage.setItem("animation", "done");
     window.addEventListener("load", () => {
         setTimeout(() => {
             logoNameFirst.style.transform = "translateX(0)";
