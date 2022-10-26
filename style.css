@@ -966,11 +966,9 @@ footer a:hover {
         gap: calc(var(--general-margin)*4);
     }
 
-    /* .projects--lv::after {
-        height: 50%;
-        background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, .35), hsl(0, 0%, 100%));
-        opacity: .8;
-    } */
+    .projects--lv::after {
+        display: none;
+    }
 
     .project-wrapper--lv {
         width: 100%;
@@ -1006,6 +1004,10 @@ footer a:hover {
 
     .overlay {
         background-color: var(--txt-color);
+    }
+
+    .overlay.over {
+        opacity: 1;
     }
 
     .slide-section {
