@@ -71,7 +71,7 @@ body.home {
     width: calc(var(--large-txt)*2);
     display: block;
     fill: var(--bg-color);
-    margin: 1rem;
+    margin-bottom: 1rem;
 }
 
 .logo-name {
