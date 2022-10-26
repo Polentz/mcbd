@@ -200,19 +200,3 @@ if (buttons, buttonClear) {
         filterUi.classList.toggle("rotate")
     });
 }
-
-// animation
-// window.addEventListener("load", () => {
-//     if (typeof (localStorage.getItem("animation")) != null && localStorage.getItem("animation") != "true") {
-//         for (let i = 0; i < projectShape.length; i++) {
-//             const el = projectShape[i];
-//             el.classList.add("initAnimate");
-//             localStorage.setItem("animation", "true");
-//         }
-//     } else {
-//         for (let i = 0; i < projectShape.length; i++) {
-//             const el = projectShape[i];
-//             el.classList.remove("initAnimate");
-//         }
-//     }
-// })

@@ -887,7 +887,7 @@ footer a:hover {
         margin-bottom: var(--nav);
     }
 
-    .projects::after {
+    /* .projects::after {
         content: "";
         width: 100%;
         height: 50%;
@@ -897,7 +897,7 @@ footer a:hover {
         background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, .5), hsl(0, 0%, 100%));
         pointer-events: none;
         opacity: .8;
-    }
+    } */
 
     .project-wrapper {
         width: 100%;
@@ -966,11 +966,11 @@ footer a:hover {
         gap: calc(var(--general-margin)*4);
     }
 
-    .projects--lv::after {
+    /* .projects--lv::after {
         height: 50%;
         background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, .35), hsl(0, 0%, 100%));
         opacity: .8;
-    }
+    } */
 
     .project-wrapper--lv {
         width: 100%;
