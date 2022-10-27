@@ -65,16 +65,16 @@ window.addEventListener("load", () => {
         element.classList.add("animation");
         setTimeout(() => {
             element.classList.remove("animation");
-        }, 1800);
+        }, 1700);
     });
 
     setTimeout(() => {
         cover.style.backgroundColor = "transparent";
-    }, 1800);
+    }, 1700);
 
     setTimeout(() => {
         logo.style.transform = "scale(10)";
-    }, 1800);
+    }, 1700);
 
     setTimeout(() => {
         logoSvg.forEach(svg => {
