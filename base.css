@@ -161,3 +161,11 @@ button,
 input {
     outline: 0;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+img::selection {
+    background-color: transparent;
+}

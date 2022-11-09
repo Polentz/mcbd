@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/dpf3baa.css">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="page.css">
 </head>
 
 <body>
@@ -46,9 +47,75 @@
         <h2>21 HEA</h2>
     </div>
 
-    <section class="project-siteplan">
-        <img src="assets/21-hea/21-hea-siteplan.svg">
-    </section>
+    <main class="page-container">
+        <img class="project-siteplan" src="assets/21-hea/21-hea-siteplan.svg">
+        <div class="arrow-left">
+            <svg viewBox="0 0 49 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 25L49 25M1 25L24.6628 49M1 25L24.6628 0.999997" />
+            </svg>
+        </div>
+        <div class="arrow-right">
+            <svg viewBox="0 0 49 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M48 25H0M48 25L24.3372 1M48 25L24.3372 49" />
+            </svg>
+        </div>
+
+        <section class="info">
+            <div class="info-wrapper fade">
+                <div class="info-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit expedita dolorum error
+                        earum velit asperiores placeat ipsam laboriosam debitis quos dolore ex laborum voluptates
+                        officiis fugiat ab, in exercitationem eaque? Aliquid, ipsam! Ipsum provident voluptas ut dolorum
+                        deleniti corrupti quo et minima totam esse similique asperiores amet, cum ducimus ullam, ex,
+                        iure nesciunt?</p>
+                    <p>A suscipit velit aperiam molestias saepe sed possimus, nulla distinctio quasi.
+                        Esse officia, nihil voluptatibus fugit optio enim sapiente quo ad, soluta sequi ullam tenetur
+                        sit ipsum, eius distinctio repudiandae. Molestias sit dolorum aspernatur non est numquam,
+                        voluptas quisquam, quae, saepe sunt quod ab tempore. Quibusdam, quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit expedita dolorum error
+                        earum velit asperiores placeat ipsam laboriosam debitis quos dolore ex laborum voluptates
+                        officiis fugiat ab, in exercitationem eaque? Aliquid, ipsam! Ipsum provident voluptas ut dolorum
+                        deleniti corrupti quo et minima totam esse similique asperiores amet, cum ducimus ullam, ex,
+                        iure nesciunt?</p>
+                    <p>A suscipit velit aperiam molestias saepe sed possimus, nulla distinctio quasi.
+                        Esse officia, nihil voluptatibus fugit optio enim sapiente quo ad, soluta sequi ullam tenetur
+                        sit ipsum, eius distinctio repudiandae. Molestias sit dolorum aspernatur non est numquam,
+                        voluptas quisquam, quae, saepe sunt quod ab tempore. Quibusdam, quis.</p>
+                </div>
+                <div class="filters filters--page">
+                    <ul class="filter-list always-visible">
+                        <li class="filter-category">fonction</li>
+                        <li class="filter-this">logement</li>
+                    </ul>
+                    <ul class="filter-list always-visible">
+                        <li class="filter-category">action</li>
+                        <li class="filter-this">transformation</li>
+                    </ul>
+                    <ul class="filter-list always-visible">
+                        <li class="filter-category">materiaux</li>
+                        <li class="filter-this">bois</li>
+                    </ul>
+                    <ul class="filter-list always-visible">
+                        <li class="filter-category">elements</li>
+                        <li class="filter-this">extérieur</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="foto">
+            <img class="fade" src="assets/21-hea/21-hea-9.jpg">
+        </section>
+        <section class="foto">
+            <img class="fade" src="assets/21-hea/21-hea-10.jpg">
+        </section>
+        <section class="foto">
+            <img class="fade" src="assets/21-hea/21-hea-11.jpg">
+        </section>
+    </main>
+
+
+
 
     <section class="text-section">
         <div class="text-section-wrapper">
@@ -134,26 +201,22 @@
         </div>
         <a class="bureau-close">
             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 1L1 9M9 9L1 1" stroke="black" />
+                <path d="M9 1L1 9M9 9L1 1" />
             </svg>
         </a>
     </section>
 
     <section id="contact" class="slide-section contact">
-        <div class="logo">
+        <div class="contact-logo">
             <svg viewBox="0 0 68 88" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
-                    d="M60.7631 83.4704L60.6982 88H67.9267V41.9714L60.769 40.7667L60.834 56.0268C58.4481 53.641 54.2728 51.7157 49.3003 51.7157C38.8237 51.7157 31.4003 59.8714 31.4003 69.8815C31.4003 79.8916 38.8237 87.9764 49.3003 87.9764C54.8693 87.9764 58.5131 85.7913 60.769 83.4704H60.7631ZM38.3571 69.8165C38.3571 63.3203 43.3946 58.082 49.8259 58.082C56.2571 58.082 61.2297 62.3931 61.2297 69.8165C61.2297 77.2399 56.1922 81.616 49.8259 81.616C43.4596 81.616 38.3571 76.3127 38.3571 69.8165Z"
-                    fill="black" />
+                    d="M60.7631 83.4704L60.6982 88H67.9267V41.9714L60.769 40.7667L60.834 56.0268C58.4481 53.641 54.2728 51.7157 49.3003 51.7157C38.8237 51.7157 31.4003 59.8714 31.4003 69.8815C31.4003 79.8916 38.8237 87.9764 49.3003 87.9764C54.8693 87.9764 58.5131 85.7913 60.769 83.4704H60.7631ZM38.3571 69.8165C38.3571 63.3203 43.3946 58.082 49.8259 58.082C56.2571 58.082 61.2297 62.3931 61.2297 69.8165C61.2297 77.2399 56.1922 81.616 49.8259 81.616C43.4596 81.616 38.3571 76.3127 38.3571 69.8165Z" />
                 <path
-                    d="M58.3536 6.384C62.3104 6.384 65.7475 8.04939 67.7849 11.0908C67.8322 11.1617 67.8794 11.2325 67.9208 11.3034V3.11227C67.8794 3.07684 67.8263 3.04731 67.7849 3.01188C65.3282 1.27562 61.8321 0.0236206 57.8162 0.0236206C47.3455 0.0236206 39.9221 8.17931 39.9221 18.1894C39.9221 28.1994 47.3455 36.2843 57.8162 36.2843C62.2868 36.2843 65.5172 34.8787 67.779 33.1248C67.8263 33.0893 67.8735 33.0598 67.9149 33.0185V24.9868C67.8735 25.0576 67.8263 25.1285 67.779 25.1994C65.7357 28.2585 62.2986 29.918 58.3477 29.918C51.9165 29.918 46.879 24.6147 46.879 18.1185C46.879 11.6223 51.9165 6.384 58.3477 6.384H58.3536Z"
-                    fill="black" />
+                    d="M58.3536 6.384C62.3104 6.384 65.7475 8.04939 67.7849 11.0908C67.8322 11.1617 67.8794 11.2325 67.9208 11.3034V3.11227C67.8794 3.07684 67.8263 3.04731 67.7849 3.01188C65.3282 1.27562 61.8321 0.0236206 57.8162 0.0236206C47.3455 0.0236206 39.9221 8.17931 39.9221 18.1894C39.9221 28.1994 47.3455 36.2843 57.8162 36.2843C62.2868 36.2843 65.5172 34.8787 67.779 33.1248C67.8263 33.0893 67.8735 33.0598 67.9149 33.0185V24.9868C67.8735 25.0576 67.8263 25.1285 67.779 25.1994C65.7357 28.2585 62.2986 29.918 58.3477 29.918C51.9165 29.918 46.879 24.6147 46.879 18.1185C46.879 11.6223 51.9165 6.384 58.3477 6.384H58.3536Z" />
                 <path
-                    d="M29.1798 55.0229C26.2919 52.9382 22.6895 51.7098 18.6323 51.7098C13.6598 51.7098 9.48446 53.6291 7.09858 56.015L7.16355 40.7607L0 41.9655V87.9941H7.23441L7.16945 83.4704C9.42541 85.7913 13.0692 87.9764 18.6382 87.9764C20.4631 87.9764 22.1993 87.7283 23.8116 87.2736L25.1639 79.1415C23.2328 80.6947 20.7879 81.616 18.1067 81.616C11.7463 81.616 6.70291 77.3108 6.70291 69.8165C6.70291 62.3223 11.7404 58.082 18.1067 58.082C22.217 58.082 25.7545 60.2198 27.7801 63.4679L29.1798 55.0288V55.0229Z"
-                    fill="black" />
+                    d="M29.1798 55.0229C26.2919 52.9382 22.6895 51.7098 18.6323 51.7098C13.6598 51.7098 9.48446 53.6291 7.09858 56.015L7.16355 40.7607L0 41.9655V87.9941H7.23441L7.16945 83.4704C9.42541 85.7913 13.0692 87.9764 18.6382 87.9764C20.4631 87.9764 22.1993 87.7283 23.8116 87.2736L25.1639 79.1415C23.2328 80.6947 20.7879 81.616 18.1067 81.616C11.7463 81.616 6.70291 77.3108 6.70291 69.8165C6.70291 62.3223 11.7404 58.082 18.1067 58.082C22.217 58.082 25.7545 60.2198 27.7801 63.4679L29.1798 55.0288V55.0229Z" />
                 <path
-                    d="M38.3513 0.0236226C32.422 0.253943 29.103 2.79928 27.5853 5.63989C25.4002 1.92524 21.6206 0 16.778 0C9.88606 0 7.56515 4.24616 7.16947 5.17334V0L0.00592041 1.21066V36.2843H7.16947V14.7169C7.69507 9.15375 11.7463 6.36628 15.7208 6.36628C20.4276 6.36628 22.4119 9.47856 22.4119 14.9826V36.2843H29.5755V16.0456C29.5755 10.0691 33.3019 6.84464 37.2883 6.41943L38.3513 0.0236226Z"
-                    fill="black" />
+                    d="M38.3513 0.0236226C32.422 0.253943 29.103 2.79928 27.5853 5.63989C25.4002 1.92524 21.6206 0 16.778 0C9.88606 0 7.56515 4.24616 7.16947 5.17334V0L0.00592041 1.21066V36.2843H7.16947V14.7169C7.69507 9.15375 11.7463 6.36628 15.7208 6.36628C20.4276 6.36628 22.4119 9.47856 22.4119 14.9826V36.2843H29.5755V16.0456C29.5755 10.0691 33.3019 6.84464 37.2883 6.41943L38.3513 0.0236226Z" />
             </svg>
         </div>
         <div class="contact-block">
@@ -173,7 +236,7 @@
         </div>
         <a class="contact-close">
             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 1L1 9M9 9L1 1" stroke="black" />
+                <path d="M9 1L1 9M9 9L1 1" />
             </svg>
         </a>
     </section>
