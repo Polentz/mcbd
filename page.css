@@ -56,7 +56,8 @@ body.page {
 
 .info {
     color: var(--txt-color);
-    padding: var(--nav) 0;
+    padding-top: var(--nav);
+    padding-bottom: var(--nav);
     overflow-y: scroll;
     height: auto;
 }
@@ -220,6 +221,10 @@ body.page {
         position: relative;
         top: 50%;
         transform: translateY(-50%);
+    }
+
+    .info {
+        padding-top: 0;
     }
 
     .info-wrapper {
