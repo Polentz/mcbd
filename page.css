@@ -1,4 +1,4 @@
-@keyframes fade {
+/* @keyframes fade {
     from {
         opacity: .3;
         transform: translateX(5%);
@@ -8,11 +8,11 @@
         opacity: 1;
         transform: translateX(0px);
     }
-}
+} */
 
 body.page {
     overflow: hidden;
-    animation: fadeIn 1s ease-in-out 1;
+    /* animation: fadeIn 1s ease-in-out 1; */
 }
 
 .page-container {
@@ -41,13 +41,17 @@ body.page {
 .project-siteplan {
     width: auto;
     height: var(--doc-height);
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     pointer-events: none;
     mix-blend-mode: difference;
     filter: invert(1);
     z-index: 2;
+
+    /* width: 100%;
+    height: auto;
+    position: static; */
 }
 
 .info {
@@ -57,7 +61,7 @@ body.page {
     height: auto;
 }
 
-.info::after {
+/* .info::after {
     content: "";
     width: 100%;
     height: 25%;
@@ -67,7 +71,7 @@ body.page {
     background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, .75), hsl(0, 0%, 100%));
     pointer-events: none;
     filter: blur(8px);
-}
+} */
 
 .info-wrapper {
     display: grid;
@@ -105,16 +109,10 @@ body.page {
 .sezione,
 .facciate,
 .foto {
-    z-index: 2;
+    background-color: var(--bg-color);
     padding-top: calc(var(--general-margin)*2);
     padding-bottom: calc(var(--general-margin)*2);
-}
-
-.planimetrie,
-.sezione,
-.facciate {
-    background-color: var(--light-grey);
-    border: solid 1px var(--orange);
+    z-index: 2;
 }
 
 .planimetrie img,
@@ -125,10 +123,6 @@ body.page {
     display: block;
     margin: 0 auto;
 }
-
-/* .foto img {
-    border: solid 1px var(--orange);
-} */
 
 .arrow-left,
 .arrow-right {
@@ -170,9 +164,22 @@ body.page {
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+.on-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 720px) {
 
-    @keyframes fade {
+    .project-siteplan {
+        display: none;
+    }
+
+    .on-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    /* @keyframes fade {
         from {
             opacity: .5;
         }
@@ -180,11 +187,11 @@ body.page {
         to {
             opacity: 1;
         }
-    }
+    } */
 
-    .project-siteplan {
+    /* .project-siteplan {
         left: -50%;
-    }
+    } */
 
     .arrow-right svg,
     .arrow-left svg {

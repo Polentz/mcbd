@@ -5,6 +5,10 @@ const documentHeight = () => {
 window.addEventListener("resize", documentHeight)
 documentHeight();
 
+window.addEventListener("load", () => {
+    history.scrollRestoration = "manual"
+});
+
 // click events
 
 const contactBtnOpen = document.getElementById("contact-btn");

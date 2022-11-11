@@ -89,20 +89,20 @@ const projects = [
         elements: [elements.exterieur]
     },
     {
-        id: "11-oex",
-        name: "11 OEX",
-        fonction: [fonction.social],
-        action: [action.concours],
-        materiaux: [materiaux.bois],
-        elements: [elements.interieur, elements.exterieur]
-    },
-    {
-        id: "15-adc",
-        name: "15 ADC",
+        id: "14-adc",
+        name: "14 ADC",
         fonction: [fonction.culturel],
         action: [action.concours],
         materiaux: [materiaux.bois],
         elements: [elements.facade, elements.foyer]
+    },
+    {
+        id: "14-oex",
+        name: "14 OEX",
+        fonction: [fonction.social],
+        action: [action.concours],
+        materiaux: [materiaux.bois],
+        elements: [elements.interieur, elements.exterieur]
     },
     {
         id: "15-chp",
