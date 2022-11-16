@@ -2,8 +2,8 @@ const logoName = document.querySelector(".logo-name");
 const logoNameFirst = document.getElementById("mcbd");
 const logoNameSecond = document.getElementById("architectes");
 const logoInit = document.querySelector(".logo-init");
-const logoCompleto = document.querySelector(".logo-completo");
-const logoNegativo = document.querySelector(".logo-negativo");
+// const logoCompleto = document.querySelector(".logo-completo");
+// const logoNegativo = document.querySelector(".logo-negativo");
 const cover = document.querySelector(".animation-cover");
 
 const animation = sessionStorage.getItem("animation");
@@ -17,6 +17,9 @@ const animation = sessionStorage.getItem("animation");
 // } else {
 sessionStorage.setItem("animation", "done");
 window.addEventListener("load", () => {
+    projectShape.forEach(element => {
+        element.classList.add("animation");
+    });
 
     setTimeout(() => {
         logoNameFirst.style.transform = "translateX(0)";
@@ -24,26 +27,27 @@ window.addEventListener("load", () => {
     }, 2500);
 
     setTimeout(() => {
-        logoName.style.opacity = "0";
-        cover.style.backgroundColor = "transparent";
+        logoInit.style.width = "100%";
     }, 4500);
 
     setTimeout(() => {
-        logoCompleto.style.opacity = "0";
-    }, 4500);
+        cover.style.backgroundColor = "transparent";
+    }, 4800);
 
-    // OK ANIMATE SHAPES
     projectShape.forEach(element => {
-        element.classList.add("animation");
         setTimeout(() => {
             element.classList.remove("animation");
-        }, 6500);
+        }, 4800);
     });
 
     setTimeout(() => {
-        cover.style.zIndex = "1";
-    }, 7500);
+        // cover.style.backgroundColor = "transparent";
+        cover.style.opacity = "0";
+    }, 6000);
 
+    // setTimeout(() => {
+    //     cover.style.display = "none";
+    // }, 7000);
 })
 // }
 

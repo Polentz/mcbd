@@ -12,7 +12,6 @@
 
 body.page {
     overflow: hidden;
-    /* animation: fadeIn 1s ease-in-out 1; */
 }
 
 .page-container {
@@ -22,6 +21,7 @@ body.page {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    animation: fadeIn 1s ease-in-out 1;
 }
 
 .page-container section {
@@ -36,22 +36,6 @@ body.page {
     color: var(--bg-color);
     mix-blend-mode: difference;
     z-index: 3;
-}
-
-.project-siteplan {
-    width: auto;
-    height: var(--doc-height);
-    position: absolute;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    mix-blend-mode: difference;
-    filter: invert(1);
-    z-index: 2;
-
-    /* width: 100%;
-    height: auto;
-    position: static; */
 }
 
 .info {
@@ -73,6 +57,18 @@ body.page {
     pointer-events: none;
     filter: blur(8px);
 } */
+
+.project-siteplan {
+    width: auto;
+    height: var(--doc-height);
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    filter: invert(1);
+    z-index: 2;
+}
 
 .info-wrapper {
     display: grid;
@@ -165,21 +161,7 @@ body.page {
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.on-mobile {
-    display: none;
-}
-
 @media screen and (max-width: 720px) {
-
-    .project-siteplan {
-        display: none;
-    }
-
-    .on-mobile {
-        display: block;
-        width: 100%;
-    }
-
     /* @keyframes fade {
         from {
             opacity: .5;
@@ -196,10 +178,21 @@ body.page {
 
     .arrow-right svg,
     .arrow-left svg {
-        height: 1rem;
+        height: 1.2rem;
         stroke: var(--bg-color);
-        stroke-width: 3px;
+        stroke-width: 2px;
         cursor: pointer;
+    }
+
+    .project-siteplan {
+        width: 100%;
+        height: auto;
+        position: static;
+        pointer-events: all;
+        mix-blend-mode: unset;
+        filter: invert(0);
+        z-index: 2;
+        display: block;
     }
 
     .planimetrie,
