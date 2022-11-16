@@ -27,7 +27,7 @@ window.addEventListener("load", () => {
     }, 2000);
 
     setTimeout(() => {
-        logoInit.style.width = "100%";
+        logoInit.classList.add("change-width");
     }, 4500);
 
     setTimeout(() => {

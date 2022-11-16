@@ -91,6 +91,10 @@ body.home {
     transition: width 4s linear;
 }
 
+.logo-init.change-width {
+    width: 100%;
+}
+
 .logo-init svg {
     display: block;
     margin-bottom: 1rem;
@@ -755,7 +759,12 @@ footer a:hover {
 
     .logo-init {
         width: 32%;
-        transition: width 2s linear;
+        transition: transform 4s linear;
+    }
+
+    .logo-init.change-width {
+        width: 32%;
+        transform: scale(10);
     }
 
     nav {
