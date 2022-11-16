@@ -24,7 +24,7 @@ window.addEventListener("load", () => {
     setTimeout(() => {
         logoNameFirst.style.transform = "translateX(0)";
         logoNameSecond.style.transform = "translateX(0)";
-    }, 2500);
+    }, 2000);
 
     setTimeout(() => {
         logoInit.style.width = "100%";
@@ -32,22 +32,21 @@ window.addEventListener("load", () => {
 
     setTimeout(() => {
         cover.style.backgroundColor = "transparent";
-    }, 4800);
-
-    projectShape.forEach(element => {
-        setTimeout(() => {
-            element.classList.remove("animation");
-        }, 4800);
-    });
+    }, 5000);
 
     setTimeout(() => {
-        // cover.style.backgroundColor = "transparent";
-        cover.style.opacity = "0";
+        projectShape.forEach(element => {
+            element.classList.remove("animation");
+        });
     }, 6000);
 
-    // setTimeout(() => {
-    //     cover.style.display = "none";
-    // }, 7000);
+    setTimeout(() => {
+        cover.style.opacity = "0";
+    }, 7000);
+
+    setTimeout(() => {
+        cover.style.display = "none";
+    }, 9000);
 })
 // }
 

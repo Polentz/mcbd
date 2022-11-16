@@ -213,8 +213,6 @@ footer a:hover {
     border-top: 1px solid var(--orange);
     transform: translateY(100%);
     z-index: 8;
-    display: flex;
-    justify-content: space-between;
     padding: var(--general-margin);
     font-size: var(--copy-txt);
     color: var(--txt-color);
@@ -245,8 +243,18 @@ footer a:hover {
     opacity: 1;
 } */
 
+.close-btn {
+    position: fixed;
+    top: var(--general-margin);
+    right: var(--general-margin);
+}
+
+.close-btn svg {
+    stroke: var(--txt-color);
+}
+
 .bureau {
-    height: 60vh;
+    height: var(--doc-height);
     gap: var(--nav);
     overflow-y: scroll;
 }
@@ -255,20 +263,27 @@ footer a:hover {
     display: none;
 }
 
+/* .bureau-column p {
+    margin-bottom: 1rem;
+} */
+
+.bureau-wrapper {
+    height: fit-content;
+    display: flex;
+    gap: 3rem;
+    /* margin-bottom: 30vh; */
+}
+
+.bureau-column:first-of-type {
+    max-width: 70%;
+    font-size: var(--medium-txt);
+}
+
+
 .contact {
     height: 30vh;
-}
-
-.bureau-block {
-    height: fit-content;
-}
-
-.bureau-block p {
-    margin-bottom: 1rem;
-}
-
-.bureau-block p:last-child {
-    margin-bottom: 30vh;
+    display: flex;
+    justify-content: space-between;
 }
 
 .contact-block p:nth-child(1),
@@ -288,18 +303,6 @@ footer a:hover {
 .contact-logo svg {
     height: 100%;
     fill: var(--txt-color);
-}
-
-.bureau-close,
-.contact-close {
-    position: sticky;
-    top: 0;
-    cursor: pointer;
-}
-
-.bureau-close svg,
-.contact-close svg {
-    stroke: var(--txt-color);
 }
 
 /* filters */
