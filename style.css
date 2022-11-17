@@ -385,7 +385,7 @@ footer a:hover {
 
 .project {
     fill: var(--txt-color);
-    transition: opacity 3s ease, fill .5s cubic-bezier(0.075, 0.82, 0.165, 1), transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: opacity 3s ease, fill 1s cubic-bezier(0.075, 0.82, 0.165, 1), transform 2s cubic-bezier(0.075, 0.82, 0.165, 1);
     /* top .8s cubic-bezier(0.075, 0.82, 0.165, 1), left .8s cubic-bezier(0.075, 0.82, 0.165, 1),  */
     cursor: pointer;
 }
@@ -647,8 +647,8 @@ footer a:hover {
 }
 
 .project.filtered {
-    /* fill: var(--orange); */
-    transform: scale(1.5);
+    fill: var(--orange);
+    /* transform: scale(1.5); */
 }
 
 .project--lv.filtered {
