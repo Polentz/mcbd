@@ -88,7 +88,7 @@ body.home {
 .logo-init {
     width: calc(var(--large-txt)*2);
     animation: fadeIn .8s ease-in-out 1 forwards;
-    transition: width 4s linear;
+    transition: width 3s linear;
 }
 
 .logo-init.change-width {
@@ -462,7 +462,8 @@ footer a:hover {
 }
 
 .project-wrapper>.project:hover {
-    transform: scale(1.5);
+    /* transform: scale(1.5); */
+    fill: var(--orange);
 }
 
 .project-wrapper:nth-of-type(1)>.project,
@@ -703,7 +704,8 @@ footer a:hover {
 }
 
 .project--lv:hover {
-    transform: scale(1.5);
+    /* transform: scale(1.5); */
+    fill: var(--orange);
 }
 
 .project-plan--lv {
@@ -759,7 +761,7 @@ footer a:hover {
 
     .logo-init {
         width: 32%;
-        transition: transform 4s linear;
+        transition: transform 3s linear;
     }
 
     .logo-init.change-width {

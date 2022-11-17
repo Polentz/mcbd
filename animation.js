@@ -24,29 +24,29 @@ window.addEventListener("load", () => {
     setTimeout(() => {
         logoNameFirst.style.transform = "translateX(0)";
         logoNameSecond.style.transform = "translateX(0)";
-    }, 2000);
+    }, 1500);
 
     setTimeout(() => {
         logoInit.classList.add("change-width");
-    }, 4500);
+    }, 3000);
 
     setTimeout(() => {
         cover.style.backgroundColor = "transparent";
-    }, 5000);
+    }, 3300);
 
     setTimeout(() => {
         projectShape.forEach(element => {
             element.classList.remove("animation");
         });
-    }, 6000);
+    }, 3300);
 
     setTimeout(() => {
         cover.style.opacity = "0";
-    }, 7000);
+    }, 4500);
 
     setTimeout(() => {
         cover.style.display = "none";
-    }, 9000);
+    }, 5500);
 })
 // }
 

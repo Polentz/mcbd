@@ -89,8 +89,16 @@ const btnRight = document.querySelector(".arrow-right");
 
 btnLeft.addEventListener("click", () => {
     plusSlides(-1);
-})
+});
 
 btnRight.addEventListener("click", () => {
     plusSlides(1);
-})
+});
+
+btnLeft.addEventListener("touchend", () => {
+    plusSlides(-1);
+});
+
+btnRight.addEventListener("touchend", () => {
+    plusSlides(1);
+});
