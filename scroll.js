@@ -95,10 +95,12 @@ btnRight.addEventListener("click", () => {
     plusSlides(1);
 });
 
-btnLeft.addEventListener("touchend", () => {
+btnLeft.addEventListener("touchend", (e) => {
+    e.preventDefault();
     plusSlides(-1);
 });
 
-btnRight.addEventListener("touchend", () => {
+btnRight.addEventListener("touchend", (e) => {
+    e.preventDefault();
     plusSlides(1);
 });
