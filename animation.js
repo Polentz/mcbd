@@ -8,80 +8,41 @@ const cover = document.querySelector(".animation-cover");
 
 const animation = sessionStorage.getItem("animation");
 
-// if (animation === "done") {
-//     logo.style.display = "none";
-//     cover.style.display = "none";
-//     projectShape.forEach(element => {
-//         element.classList.remove("animation");
-//     });
-// } else {
-sessionStorage.setItem("animation", "done");
-window.addEventListener("load", () => {
+if (animation === "done") {
+    logo.style.display = "none";
+    cover.style.display = "none";
     projectShape.forEach(element => {
-        element.classList.add("animation");
+        element.classList.remove("animation");
     });
-
-    setTimeout(() => {
-        logoNameFirst.style.transform = "translateX(0)";
-        logoNameSecond.style.transform = "translateX(0)";
-    }, 1500);
-
-    setTimeout(() => {
-        logoInit.classList.add("change-width");
-    }, 3000);
-
-    setTimeout(() => {
-        cover.style.backgroundColor = "transparent";
-    }, 3300);
-
-    setTimeout(() => {
+} else {
+    sessionStorage.setItem("animation", "done");
+    window.addEventListener("load", () => {
         projectShape.forEach(element => {
-            element.classList.remove("animation");
+            element.classList.add("animation");
         });
-    }, 3300);
 
-    setTimeout(() => {
-        cover.style.opacity = "0";
-    }, 4500);
+        setTimeout(() => {
+            logoNameFirst.style.transform = "translateX(0)";
+            logoNameSecond.style.transform = "translateX(0)";
+        }, 1000);
 
-    setTimeout(() => {
-        cover.style.display = "none";
-    }, 5500);
-})
-// }
+        setTimeout(() => {
+            logoInit.classList.add("change-width");
+        }, 2500);
 
+        setTimeout(() => {
+            cover.style.backgroundColor = "transparent";
+            projectShape.forEach(element => {
+                element.classList.remove("animation");
+            });
+        }, 2800);
 
-// window.addEventListener("load", () => {
-//     setTimeout(() => {
-//         logoNameFirst.style.transform = "translateX(0)";
-//     }, 800);
+        setTimeout(() => {
+            cover.style.opacity = "0";
+        }, 4000);
 
-//     setTimeout(() => {
-//         logoNameSecond.style.transform = "translateX(0)";
-//     }, 800);
-
-//     projectShape.forEach(element => {
-//         element.classList.add("animation");
-//         setTimeout(() => {
-//             element.classList.remove("animation");
-//         }, 1700);
-//     });
-
-//     setTimeout(() => {
-//         cover.style.backgroundColor = "transparent";
-//     }, 1700);
-
-//     setTimeout(() => {
-//         logo.style.transform = "scale(10)";
-//     }, 1700);
-
-//     setTimeout(() => {
-//         logoSvg.forEach(svg => {
-//             svg.style.opacity = "0"
-//         });
-//     }, 3000)
-
-//     setTimeout(() => {
-//         logo.style.display = "none";
-//     }, 3500);
-// })
+        setTimeout(() => {
+            cover.style.display = "none";
+        }, 5000);
+    })
+}

@@ -12,10 +12,10 @@ window.addEventListener("load", () => {
 // click events
 
 const contactBtnOpen = document.getElementById("contact-btn");
-const contactBtnClose = document.querySelector(".contact-close");
+const contactBtnClose = document.getElementById("contact-close");
 const contactElement = document.getElementById("contact");
 const bureauBtnOpen = document.getElementById("bureau-btn");
-const bureauBtnClose = document.querySelector(".bureau-close");
+const bureauBtnClose = document.getElementById("bureau-close");
 const bureauElement = document.getElementById("bureau");
 
 const openClick = (button, element) => {
