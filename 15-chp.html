@@ -47,21 +47,32 @@
         <h2>15 CHP</h2>
     </div>
 
-    <main class="page-container">
-        <img class="project-siteplan" src="assets/15-chp/15-chp-siteplan.svg">
-        <div class="arrow-left">
-            <svg viewBox="0 0 49 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 25L49 25M1 25L24.6628 49M1 25L24.6628 0.999997" />
-            </svg>
-        </div>
-        <div class="arrow-right">
-            <svg viewBox="0 0 49 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M48 25H0M48 25L24.3372 1M48 25L24.3372 49" />
-            </svg>
-        </div>
+    <div class="arrow-left"></div>
+    <div class="arrow-right"></div>
 
-        <section class="info">
-            <div class="info-wrapper fade">
+    <div class="filters filters--page">
+        <ul class="filter-list always-visible">
+            <li class="filter-category">fonction</li>
+            <li class="filter-this">logement</li>
+        </ul>
+        <ul class="filter-list always-visible">
+            <li class="filter-category">action</li>
+            <li class="filter-this">transformation</li>
+        </ul>
+        <ul class="filter-list always-visible">
+            <li class="filter-category">materiaux</li>
+            <li class="filter-this">bois</li>
+        </ul>
+        <ul class="filter-list always-visible">
+            <li class="filter-category">elements</li>
+            <li class="filter-this">extérieur</li>
+        </ul>
+    </div>
+
+    <main class="page-container">
+        <section class="page-info">
+            <img class="page-siteplan" src="assets/15-chp/15-chp-siteplan.svg">
+            <div class="info-wrapper">
                 <div class="info-content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit expedita dolorum error
                         earum velit asperiores placeat ipsam laboriosam debitis quos dolore ex laborum voluptates
@@ -82,52 +93,21 @@
                         sit ipsum, eius distinctio repudiandae. Molestias sit dolorum aspernatur non est numquam,
                         voluptas quisquam, quae, saepe sunt quod ab tempore. Quibusdam, quis.</p>
                 </div>
-                <div class="filters filters--page">
-                    <ul class="filter-list always-visible">
-                        <li class="filter-category">fonction</li>
-                        <li class="filter-this">logement</li>
-                    </ul>
-                    <ul class="filter-list always-visible">
-                        <li class="filter-category">action</li>
-                        <li class="filter-this">transformation</li>
-                    </ul>
-                    <ul class="filter-list always-visible">
-                        <li class="filter-category">materiaux</li>
-                        <li class="filter-this">bois</li>
-                    </ul>
-                    <ul class="filter-list always-visible">
-                        <li class="filter-category">elements</li>
-                        <li class="filter-this">extérieur</li>
-                    </ul>
-                </div>
             </div>
         </section>
-
-        <section class="planimetrie">
-            <img class="fade" src="assets/15-chp/15-chp-plan-1.png">
+        <section class="page-gallery">
+            <img src="assets/15-chp/15-chp-plan-1.png">
         </section>
-
-        <section class="sezione">
-            <img class="fade" src="assets/15-chp/15-chp-plan-2.png">
+        <section class="page-gallery">
+            <img src="assets/15-chp/15-chp-plan-2.png">
         </section>
-
-        <section class="foto">
-            <img class="fade" src="assets/15-chp/15-chp-4.jpg">
+        <section class="page-gallery">
+            <img src="assets/15-chp/15-chp-4.jpg">
         </section>
     </main>
 
     <section id="bureau" class="slide-section bureau">
-        <div class="bureau-block">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ut cumque architecto et inventore
-                asperiores deserunt nisi repellendus adipisci rem dolorem suscipit quas, illo, cum voluptatem, excepturi
-                odio fugit mollitia aut. Aspernatur, quos tempore! Nisi modi eius dolore repudiandae architecto velit
-                at. Perferendis dignissimos vel nobis facere tenetur pariatur vero!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ut cumque architecto et inventore
-                asperiores deserunt nisi repellendus adipisci rem dolorem suscipit quas, illo, cum voluptatem, excepturi
-                odio fugit mollitia aut. Aspernatur, quos tempore! Nisi modi eius dolore repudiandae architecto velit
-                at. Perferendis dignissimos vel nobis facere tenetur pariatur vero!</p>
-        </div>
-        <a class="bureau-close">
+        <a id="bureau-close" class="close-btn">
             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 1L1 9M9 9L1 1" />
             </svg>
@@ -162,11 +142,13 @@
         <div class="contact-block">
             <a href="mailto:mcbd@mcbd.ch">mcbd@mcbd.ch</a>
         </div>
-        <a class="contact-close">
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 1L1 9M9 9L1 1" />
-            </svg>
-        </a>
+        <div class="contact-block">
+            <a id="contact-close" class="close-btn">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 1L1 9M9 9L1 1" />
+                </svg>
+            </a>
+        </div>
     </section>
 
     <footer class="footer--page">
@@ -175,6 +157,7 @@
         </svg>
         <a href="javascript:window.history.back();">all projects</a>
     </footer>
+
     <script src="script.js"></script>
     <script src="scroll.js"></script>
 </body>

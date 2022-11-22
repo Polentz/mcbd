@@ -59,7 +59,7 @@ buttons.forEach(btn => {
             filters.push({ category: btn.dataset.categories, value: btn.id });
         }
         filterProjects();
-    })
+    });
 });
 
 buttonClear.addEventListener("click", () => {
@@ -83,12 +83,12 @@ projectShape.forEach(shape => {
             if (div.id === `${shape.id}-wrapper`) {
                 const plan = div.querySelector(".project-plan");
                 const info = div.querySelector(".project-info");
-                const anchorTag = div.querySelector("a");
+                const anchorTag = document.querySelectorAll(".js-href");
                 const projectUrl = `${shape.id}.html`;
 
-                if (toThePage) {
-                    toThePage.setAttribute("href", projectUrl);
-                }
+                anchorTag.forEach(a => {
+                    a.setAttribute("href", projectUrl);
+                });
 
                 const addClasses = () => {
                     shape.classList.add("hide");
@@ -107,21 +107,19 @@ projectShape.forEach(shape => {
 
                 addClasses();
 
-                // plan.addEventListener("click", () => {
-                //     removeClasses();
-                // });
-
                 overlay.addEventListener("click", () => {
                     removeClasses();
                 });
 
-                // anchorTag.addEventListener("click", () => {
-                //     removeClasses();
-                // });
-            }
-        })
-    })
-})
+                anchorTag.forEach(a => {
+                    a.addEventListener("click", () => {
+                        removeClasses();
+                    });
+                });
+            };
+        });
+    });
+});
 
 const filterBtn = document.querySelector(".always-visible");
 const filterUi = document.querySelector(".always-visible svg");
@@ -131,5 +129,5 @@ filterBtn.addEventListener("click", () => {
     filterOpen.forEach(element => {
         element.classList.toggle("open-filter");
     });
-    filterUi.classList.toggle("rotate")
+    filterUi.classList.toggle("rotate");
 });

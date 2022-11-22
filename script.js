@@ -6,7 +6,7 @@ window.addEventListener("resize", documentHeight)
 documentHeight();
 
 window.addEventListener("load", () => {
-    history.scrollRestoration = "manual"
+    history.scrollRestoration = "manual";
 });
 
 // click events
@@ -26,7 +26,7 @@ const openClick = (button, element) => {
             element.classList.add("open");
         }
     });
-}
+};
 
 openClick(contactBtnOpen, contactElement);
 openClick(contactBtnClose, contactElement);
