@@ -1,14 +1,5 @@
 :root {
     --doc-height: 100%;
-    /* --grey: #c2c2c2;
-    --light-grey: #efefef; */
-
-    /* --grey: #EBD999;
-    --light-grey: #e7daab; */
-    --orange: #e24011;
-    --grey: #c0b490;
-    --light-grey: #ded6bf;
-
     /* arancione iniziale: */
     /* --orange: #ec9b50; */
     /* arancione chiaro iniziale */
@@ -17,10 +8,11 @@
     /* --orange: #E24011; */
     /* blu acceso se vogliamo cambiare: */
     /* --orange: #2a24d5; */
-
-    /* --orange: #f7861d; */
     --txt-color: #171a19;
     --bg-color: #ffffff;
+    --orange: #e24011;
+    --ecru: #c0b490;
+    --light-ecru: #ded6bf;
     --nav: 5rem;
     --general-margin: 2.5rem;
     --copy-txt: .95rem;
@@ -153,7 +145,7 @@ header {
     position: fixed;
     top: var(--general-margin);
     right: var(--general-margin);
-    color: var(--grey);
+    color: var(--ecru);
     font-weight: 500;
     font-size: 1.2rem;
     z-index: 5;
@@ -228,7 +220,7 @@ footer p:nth-of-type(2) {
 }
 
 footer a {
-    color: var(--grey);
+    color: var(--ecru);
 }
 
 footer a:hover {
@@ -240,7 +232,7 @@ footer a:hover {
     position: fixed;
     left: 0;
     bottom: 0;
-    background-color: var(--light-grey);
+    background-color: var(--light-ecru);
     border-top: 1px solid var(--bg-color);
     transform: translateY(100%);
     z-index: 8;
@@ -307,7 +299,7 @@ footer a:hover {
 }
 
 .contact-block a:hover {
-    color: var(--grey);
+    color: var(--ecru);
 }
 
 .contact-block p:last-child {
@@ -354,7 +346,7 @@ footer a:hover {
 
 .filter-btn {
     width: fit-content;
-    color: var(--grey);
+    color: var(--ecru);
     cursor: pointer;
     transition: color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -366,7 +358,7 @@ footer a:hover {
 }
 
 .filter-btn.active:hover {
-    color: var(--grey);
+    color: var(--ecru);
 }
 
 .filter-btn:hover {
@@ -382,7 +374,7 @@ footer a:hover {
 }
 
 .filter-clear p:hover {
-    color: var(--grey);
+    color: var(--ecru);
 }
 
 /* projects */
@@ -470,7 +462,7 @@ footer a:hover {
 }
 
 .project-info-link a:hover {
-    color: var(--grey);
+    color: var(--ecru);
 }
 
 .project-info-link svg {
@@ -926,7 +918,7 @@ footer a:hover {
 
     .overlay svg {
         width: 1.5rem;
-        stroke: var(--grey);
+        stroke: var(--ecru);
         stroke-width: 2px;
         cursor: pointer;
     }
@@ -984,7 +976,7 @@ footer a:hover {
 
     footer a:hover,
     .filter-btn:hover {
-        color: var(--grey);
+        color: var(--ecru);
     }
 
     .contact-block a:hover,
