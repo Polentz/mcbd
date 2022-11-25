@@ -8,7 +8,8 @@
     --orange: #DE4500; */
     --grey: #c0b490;
     --light-grey: #ded6bf;
-    --orange: #e24011;
+    --orange: #c91c41;
+    --green: #a6d40d;
 
     /* arancione iniziale: */
     /* --orange: #ec9b50; */
@@ -68,6 +69,31 @@ body.home {
     100% {
         opacity: 1;
     }
+}
+
+.wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+#cursor {
+    width: 48px;
+    height: 48px;
+    /* background: none;
+    border: 2px solid var(--orange);
+    border-radius: 50%; */
+    background-image: url("assets/cursor.svg");
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* transform-origin: center; */
+    /* margin: -10px 0 0 -10px; */
+    pointer-events: none;
 }
 
 .project.animation {
@@ -828,13 +854,20 @@ footer a:hover {
         left: var(--general-margin) !important;
         bottom: var(--general-margin);
         transform: none !important;
-        margin: 0;
+        margin: 0 !important;
         width: calc(100vw - var(--general-margin)*2);
         color: var(--bg-color);
     }
 
+    /* .project-info {
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+    } */
+
     .project-info h2 {
-        padding: var(--general-margin) 0;
+        /* padding: var(--general-margin) 0; */
+        position: absolute;
+        bottom: 4.5rem;
     }
 
     .project-info-link {
@@ -873,11 +906,6 @@ footer a:hover {
         gap: calc(var(--general-margin)/2);
     }
 
-    .project-info {
-        margin-top: 0 !important;
-        margin-left: 0 !important;
-    }
-
     .project-list--lv img {
         height: 10vh;
     }
@@ -900,7 +928,7 @@ footer a:hover {
 
     .overlay svg {
         width: 1.5rem;
-        stroke: var(--grey);
+        stroke: var(--green);
         stroke-width: 2px;
         cursor: pointer;
     }
@@ -909,9 +937,10 @@ footer a:hover {
         visibility: visible;
         pointer-events: all;
         position: fixed;
-        top: 50%;
+        /* top: 50%; */
+        bottom: 6rem;
         right: var(--general-margin);
-        transform: translateY(-50%);
+        /* transform: translateY(-50%); */
         z-index: 9;
     }
 

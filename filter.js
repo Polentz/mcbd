@@ -76,6 +76,7 @@ const projectShape = document.querySelectorAll(".project");
 const projectDiv = document.querySelectorAll(".project-wrapper--lv, .project-wrapper");
 const overlay = document.getElementById("overlay");
 const toThePage = document.querySelector(".to-the-page");
+// const cursor = document.getElementById("cursor");
 
 projectShape.forEach(shape => {
     shape.addEventListener("click", () => {
@@ -96,6 +97,7 @@ projectShape.forEach(shape => {
                     info.classList.add("show-info");
                     overlay.classList.add("over");
                     toThePage.classList.add("show-info");
+                    // cursor.style.opacity = "0";
                 }
                 const removeClasses = () => {
                     shape.classList.remove("hide");
@@ -103,6 +105,7 @@ projectShape.forEach(shape => {
                     info.classList.remove("show-info");
                     overlay.classList.remove("over");
                     toThePage.classList.remove("show-info");
+                    // cursor.style.opacity = "1";
                 }
 
                 addClasses();
