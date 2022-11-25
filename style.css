@@ -4,12 +4,10 @@
     --light-grey: #efefef; */
 
     /* --grey: #EBD999;
-    --light-grey: #e7daab;
-    --orange: #DE4500; */
+    --light-grey: #e7daab; */
+    --orange: #e24011;
     --grey: #c0b490;
     --light-grey: #ded6bf;
-    --orange: #c91c41;
-    --green: #a6d40d;
 
     /* arancione iniziale: */
     /* --orange: #ec9b50; */
@@ -928,7 +926,7 @@ footer a:hover {
 
     .overlay svg {
         width: 1.5rem;
-        stroke: var(--green);
+        stroke: var(--grey);
         stroke-width: 2px;
         cursor: pointer;
     }
