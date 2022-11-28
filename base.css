@@ -172,5 +172,5 @@ img::selection {
 
 ::selection {
     background-color: transparent;
-    color: var(--light-grey);
+    color: var(--light-ecru);
 }

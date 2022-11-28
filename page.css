@@ -52,7 +52,7 @@ body.page {
 
 .filter-this {
     font-weight: 400;
-    color: var(--grey);
+    color: var(--ecru);
 }
 
 .footer--page a {
@@ -61,7 +61,7 @@ body.page {
 }
 
 .footer--page a:hover {
-    color: var(--grey);
+    color: var(--ecru);
 }
 
 .page-container {
