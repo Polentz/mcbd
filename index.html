@@ -109,7 +109,7 @@
     </section>
 
     <section class="filters">
-        <ul class="filter-list">
+        <ul id="fonction" class="filter-list">
             <li class="filter-category">fonction</li>
             <li id="logement" class="filter-btn" data-categories="fonction">logement</li>
             <li id="culturel" class="filter-btn" data-categories="fonction">culturel</li>
@@ -117,30 +117,28 @@
             <li id="education" class="filter-btn" data-categories="fonction">éducation</li>
             <li id="bureaux" class="filter-btn" data-categories="fonction">bureaux</li>
         </ul>
-        <ul class="filter-list">
+        <ul id="action" class="filter-list">
             <li class="filter-category">action</li>
             <li id="construction" class="filter-btn" data-categories="action">construction</li>
             <li id="transformation" class="filter-btn" data-categories="action">transformation</li>
             <li id="scenographie" class="filter-btn" data-categories="action">scénographie</li>
             <li id="concours" class="filter-btn" data-categories="action">concours</li>
         </ul>
-        <ul class="filter-list">
+        <ul id="materiaux" class="filter-list">
             <li class="filter-category">materiaux</li>
             <li id="bois" class="filter-btn" data-categories="materiaux">bois</li>
             <li id="metal" class="filter-btn" data-categories="materiaux">métal</li>
-            <li id="terrecrue" class="filter-btn" data-categories="materiaux">terre crue</li>
+            <li id="terre" class="filter-btn" data-categories="materiaux">terre</li>
             <li id="vegetal" class="filter-btn" data-categories="materiaux">végétal</li>
-            <li id="beton" class="filter-btn" data-categories="materiaux">béton</li>
-            <li id="pierre" class="filter-btn" data-categories="materiaux">pierre</li>
+            <li id="mineral" class="filter-btn" data-categories="materiaux">minéral</li>
             <li id="mixte" class="filter-btn" data-categories="materiaux">mixte</li>
         </ul>
-        <ul class="filter-list">
+        <ul id="elements" class="filter-list">
             <li class="filter-category">elements</li>
             <li id="facade" class="filter-btn" data-categories="elements">façade</li>
             <li id="toit" class="filter-btn" data-categories="elements">toit</li>
             <li id="interieur" class="filter-btn" data-categories="elements">intérieur</li>
             <li id="exterieur" class="filter-btn" data-categories="elements">extérieur</li>
-            <li id="cagedescalier" class="filter-btn" data-categories="elements">cage d'escalier</li>
             <li id="foyer" class="filter-btn" data-categories="elements">foyer</li>
         </ul>
         <ul class="filter-list always-visible">
@@ -469,7 +467,7 @@
                 <div class="project-info-text">
                     <p>logement</p>
                     <p>concours</p>
-                    <p>béton</p>
+                    <p>mixte</p>
                     <p>intérieur + extérieur</p>
                 </div>
                 <div class="project-info-text">
@@ -520,9 +518,8 @@
                 <div class="project-info-text">
                     <p>culturel</p>
                     <p>concours</p>
-                    <p>béton + végétal</p>
-                    <p>intérieur +
-                        extérieur</p>
+                    <p>minéral + végétal</p>
+                    <p>intérieur + extérieur</p>
                 </div>
                 <div class="project-info-text">
                     <p>Genève</p>
@@ -579,8 +576,7 @@
                     <p>logement</p>
                     <p>transformation</p>
                     <p>bois</p>
-                    <p>intérieur +
-                        extérieur</p>
+                    <p>intérieur + extérieur</p>
                 </div>
                 <div class="project-info-text">
                     <p>Val d'Illiez</p>
@@ -634,7 +630,7 @@
                     <p>logement</p>
                     <p>transformation</p>
                     <p>bois</p>
-                    <p>extérieur</p>
+                    <p>intérieur + extérieur</p>
                 </div>
                 <div class="project-info-text">
                     <p>Genève</p>
@@ -699,7 +695,7 @@
                     <p>culturel</p>
                     <p>concours</p>
                     <p>bois</p>
-                    <p>façade + foyer</p>
+                    <p>intérieur + extérieur</p>
                 </div>
                 <div class="project-info-text">
                     <p>Genève</p>
@@ -816,7 +812,7 @@
                 <div class="project-info-text">
                     <p>social</p>
                     <p>concours</p>
-                    <p>bois</p>
+                    <p>minéral + bois</p>
                     <p>intérieur + extérieur</p>
                 </div>
                 <div class="project-info-text">
@@ -938,7 +934,7 @@
                 <div class="project-info-text">
                     <p>culturel</p>
                     <p>scénographie</p>
-                    <p>bois</p>
+                    <p>bois + végétal</p>
                     <p>intérieur</p>
                 </div>
                 <div class="project-info-text">
@@ -1176,7 +1172,7 @@
                 <div class="project-info-text">
                     <p>social</p>
                     <p>transformation</p>
-                    <p>métal</p>
+                    <p>métal + végétal</p>
                     <p>façade</p>
                 </div>
                 <div class="project-info-text">
@@ -1236,8 +1232,7 @@
                     <p>culturel + bureaux</p>
                     <p>transformation</p>
                     <p>bois</p>
-                    <p>intérieur +
-                        foyer</p>
+                    <p>intérieur + foyer</p>
                 </div>
                 <div class="project-info-text">
                     <p>Nyon</p>
@@ -1303,7 +1298,7 @@
                 <div class="project-info-text">
                     <p>logement + bureaux</p>
                     <p>transformation</p>
-                    <p>mixte</p>
+                    <p>mixte + bois</p>
                     <p>intérieur</p>
                 </div>
                 <div class="project-info-text">
@@ -1445,9 +1440,8 @@
                 <div class="project-info-text">
                     <p>bureaux</p>
                     <p>transformation</p>
-                    <p>bois</p>
-                    <p>toit + cage
-                        d'escalier</p>
+                    <p>bois + métal</p>
+                    <p>toit + foyer</p>
                 </div>
                 <div class="project-info-text">
                     <p>Genève</p>
@@ -1522,7 +1516,7 @@
                 <div class="project-info-text">
                     <p>social</p>
                     <p>concours</p>
-                    <p>béton</p>
+                    <p>mixte</p>
                     <p>toit + foyer</p>
                 </div>
                 <div class="project-info-text">
@@ -1622,9 +1616,8 @@
                 <div class="project-info-text">
                     <p>social</p>
                     <p>concours</p>
-                    <p>terre crue + métal</p>
-                    <p>intérieur +
-                        extérieur</p>
+                    <p>mixte + métal</p>
+                    <p>intérieur + extérieur</p>
                 </div>
                 <div class="project-info-text">
                     <p>Orbe</p>
@@ -1716,7 +1709,7 @@
                 <div class="project-info-text">
                     <p>culturel</p>
                     <p>transformation</p>
-                    <p>béton + pierre</p>
+                    <p>minéral + métal</p>
                     <p>foyer</p>
                 </div>
                 <div class="project-info-text">
@@ -1945,9 +1938,8 @@
                 <div class="project-info-text">
                     <p>education</p>
                     <p>transformation + concours</p>
-                    <p>bois</p>
-                    <p>extérieur +
-                        foyer</p>
+                    <p>mixte + bois</p>
+                    <p>extérieur + foyer</p>
                 </div>
                 <div class="project-info-text">
                     <p>Sierre</p>
@@ -2015,9 +2007,8 @@
                 <div class="project-info-text">
                     <p>logement</p>
                     <p>construction</p>
-                    <p>pierre</p>
-                    <p>intérieur +
-                        extérieur</p>
+                    <p>minéral</p>
+                    <p>intérieur + extérieur</p>
                 </div>
                 <div class="project-info-text">
                     <p>Sifnos</p>
@@ -2112,9 +2103,8 @@
                 <div class="project-info-text">
                     <p>logement</p>
                     <p>construction</p>
-                    <p>béton</p>
-                    <p>intérieur +
-                        extérieur</p>
+                    <p>mixte</p>
+                    <p>intérieur + extérieur</p>
                 </div>
                 <div class="project-info-text">
                     <p>Genève</p>

@@ -23,10 +23,9 @@ const action = {
 const materiaux = {
     bois: "bois",
     metal: "metal",
-    terrecrue: "terrecrue",
+    terre: "terre",
     vegetal: "vegetal",
-    beton: "beton",
-    pierre: "pierre",
+    mineral: "mineral",
     mixte: "mixte"
 }
 
@@ -35,7 +34,6 @@ const elements = {
     toit: "toit",
     interieur: "interieur",
     exterieur: "exterieur",
-    cagedescalier: "cagedescalier",
     foyer: "foyer"
 }
 
@@ -61,7 +59,7 @@ const projects = [
         name: "05 GOL",
         fonction: [fonction.logement],
         action: [action.concours],
-        materiaux: [materiaux.beton],
+        materiaux: [materiaux.mixte],
         elements: [elements.interieur, elements.exterieur]
     },
     {
@@ -69,7 +67,7 @@ const projects = [
         name: "07 BOT",
         fonction: [fonction.culturel],
         action: [action.concours],
-        materiaux: [materiaux.beton, materiaux.vegetal],
+        materiaux: [materiaux.mineral, materiaux.vegetal],
         elements: [elements.interieur, elements.exterieur]
     },
     {
@@ -86,7 +84,7 @@ const projects = [
         fonction: [fonction.logement],
         action: [action.transformation],
         materiaux: [materiaux.bois],
-        elements: [elements.exterieur]
+        elements: [elements.interieur, elements.exterieur]
     },
     {
         id: "14-adc",
@@ -94,14 +92,14 @@ const projects = [
         fonction: [fonction.culturel],
         action: [action.concours],
         materiaux: [materiaux.bois],
-        elements: [elements.facade, elements.foyer]
+        elements: [elements.interieur, elements.exterieur]
     },
     {
         id: "14-oex",
         name: "14 OEX",
         fonction: [fonction.social],
         action: [action.concours],
-        materiaux: [materiaux.bois],
+        materiaux: [materiaux.mineral, materiaux.bois],
         elements: [elements.interieur, elements.exterieur]
     },
     {
@@ -117,7 +115,7 @@ const projects = [
         name: "15 MEG",
         fonction: [fonction.culturel],
         action: [action.scenographie],
-        materiaux: [materiaux.bois],
+        materiaux: [materiaux.bois, materiaux.vegetal],
         elements: [elements.interieur]
     },
     {
@@ -125,7 +123,7 @@ const projects = [
         name: "16 PAT",
         fonction: [fonction.social],
         action: [action.transformation],
-        materiaux: [materiaux.metal],
+        materiaux: [materiaux.metal, materiaux.vegetal],
         elements: [elements.facade]
     },
     {
@@ -141,7 +139,7 @@ const projects = [
         name: "18 ADR",
         fonction: [fonction.logement, fonction.bureaux],
         action: [action.transformation],
-        materiaux: [materiaux.mixte],
+        materiaux: [materiaux.mixte, materiaux.bois],
         elements: [elements.interieur]
     },
     {
@@ -149,15 +147,15 @@ const projects = [
         name: "19 FUS",
         fonction: [fonction.bureaux],
         action: [action.transformation],
-        materiaux: [materiaux.bois],
-        elements: [elements.toit, elements.cagedescalier]
+        materiaux: [materiaux.bois, materiaux.metal],
+        elements: [elements.toit, elements.foyer]
     },
     {
         id: "20-bus",
         name: "20 BUS",
         fonction: [fonction.social],
         action: [action.concours],
-        materiaux: [materiaux.beton],
+        materiaux: [materiaux.mixte],
         elements: [elements.toit, elements.foyer]
     },
     {
@@ -165,7 +163,7 @@ const projects = [
         name: "20 PGM",
         fonction: [fonction.social],
         action: [action.concours],
-        materiaux: [materiaux.terrecrue, materiaux.metal],
+        materiaux: [materiaux.mixte, materiaux.metal],
         elements: [elements.interieur, elements.exterieur]
     },
     {
@@ -173,23 +171,31 @@ const projects = [
         name: "21 GAR",
         fonction: [fonction.culturel],
         action: [action.transformation],
-        materiaux: [materiaux.beton, materiaux.pierre],
-        elements: [elements.foyer]
+        materiaux: [materiaux.mineral, materiaux.metal],
+        elements: [elements.foyer, elements.facade]
     },
     {
         id: "21-hea",
         name: "21 HEA",
         fonction: [fonction.education],
         action: [action.transformation, action.concours],
-        materiaux: [materiaux.bois],
+        materiaux: [materiaux.mixte, materiaux.bois],
         elements: [elements.exterieur, elements.foyer]
     },
+    // {
+    //     id: "22-per",
+    //     name: "22 PER",
+    //     fonction: [fonction.logement],
+    //     action: [action.construction],
+    //     materiaux: [materiaux.terre, materiaux.bois],
+    //     elements: [elements.interieur, elements.facade]
+    // },
     {
         id: "22-sif",
         name: "22 SIF",
         fonction: [fonction.logement],
         action: [action.construction],
-        materiaux: [materiaux.pierre],
+        materiaux: [materiaux.mineral],
         elements: [elements.interieur, elements.exterieur]
     },
     {
@@ -197,7 +203,7 @@ const projects = [
         name: "22 VDT",
         fonction: [fonction.logement],
         action: [action.construction],
-        materiaux: [materiaux.beton],
+        materiaux: [materiaux.mixte],
         elements: [elements.interieur, elements.exterieur]
     },
 ]
