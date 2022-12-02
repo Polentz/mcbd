@@ -105,7 +105,7 @@ buttonClear.addEventListener("click", () => {
 const projectShape = document.querySelectorAll(".project");
 const projectDiv = document.querySelectorAll(".project-wrapper--lv, .project-wrapper");
 const overlay = document.getElementById("overlay");
-const toThePage = document.querySelector(".to-the-page");
+// const toThePage = document.querySelector(".to-the-page");
 
 projectShape.forEach(shape => {
     shape.addEventListener("click", () => {
@@ -125,14 +125,14 @@ projectShape.forEach(shape => {
                     plan.classList.add("show-info");
                     info.classList.add("show-info");
                     overlay.classList.add("over");
-                    toThePage.classList.add("show-info");
+                    // toThePage.classList.add("show-info");
                 }
                 const removeClasses = () => {
                     shape.classList.remove("hide");
                     plan.classList.remove("show-info");
                     info.classList.remove("show-info");
                     overlay.classList.remove("over");
-                    toThePage.classList.remove("show-info");
+                    // toThePage.classList.remove("show-info");
                 }
 
                 addClasses();
