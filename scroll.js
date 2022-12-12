@@ -1,34 +1,3 @@
-// const scrollFunctions = () => {
-//     window.addEventListener("scroll", revealOnScroll);
-// }
-
-// const revealOnScroll = () => {
-//     const reveals = document.querySelectorAll(".page-gallery");
-//     for (let i = 0; i < reveals.length; i++) {
-//         const windowHeight = window.innerHeight;
-//         const elementTop = reveals[i].getBoundingClientRect().top;
-//         const elementVisible = 100;
-
-//         if (elementTop < windowHeight - elementVisible) {
-//             reveals[i].classList.add("appear");
-//         } else {
-//             reveals[i].classList.remove("appear");
-//         }
-//     }
-// }
-
-// const hideOnScroll = (element) => {
-//     window.addEventListener("scroll", () => {
-//         if (element.classList.contains("open")) {
-//             element.classList.remove("open");
-//         }
-//     });
-
-// }
-
-// scrollFunctions();
-
-
 let slideIndex = 1;
 const mediaQuery = window.matchMedia("(max-width: 720px)");
 

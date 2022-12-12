@@ -38,9 +38,10 @@ a {
 h2 {
     font-size: var(--large-txt);
     font-weight: 200;
-    line-height: 1;
-    margin-bottom: -4px;
+    line-height: .8;
     text-indent: -2px;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
 }
 
 li {
@@ -154,10 +155,9 @@ header {
 nav {
     line-height: 1;
     font-weight: 400;
-}
-
-nav a:first-of-type {
-    margin: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
 }
 
 nav a:hover {
@@ -232,39 +232,24 @@ footer a:hover {
     position: fixed;
     left: 0;
     bottom: 0;
-    background-color: var(--light-ecru);
-    border-top: 1px solid var(--bg-color);
     transform: translateY(100%);
     z-index: 8;
     padding: var(--general-margin);
     font-size: var(--copy-txt);
     color: var(--txt-color);
+    background-color: var(--light-ecru);
     opacity: 0;
     transition: opacity .5s ease;
 }
-
-/* .slide-section::after {
-    content: "";
-    width: 100%;
-    height: 25%;
-    position: fixed;
-    top: calc(-25% - 1px);
-    left: 0;
-    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, .5), hsl(0, 0%, 100%));
-    pointer-events: none;
-    filter: blur(8px);
-    opacity: 0;
-    transition: opacity 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-} */
 
 .slide-section.open {
     transform: translateY(0);
     opacity: 1;
 }
 
-/* .slide-section.open::after {
-    opacity: 1;
-} */
+.slide-section::-webkit-scrollbar {
+    display: none;
+}
 
 .close-btn {
     position: fixed;
@@ -276,20 +261,109 @@ footer a:hover {
     stroke: var(--txt-color);
 }
 
+.bureau,
+.contact {
+    border-top: 1px solid var(--bg-color);
+}
+
+.news {
+    width: 50%;
+    height: var(--doc-height);
+    border-right: 1px solid var(--bg-color);
+    overflow-y: scroll;
+}
+
+.news h2 {
+    margin-bottom: 1rem;
+}
+
+.news h3 {
+    font-size: var(--copy-txt);
+}
+
+.news p {
+    margin-bottom: .5rem;
+}
+
+.news .info-list-content:not(:last-of-type) {
+    margin-bottom: calc(var(--general-margin)*2);
+}
+
 .bureau {
-    height: auto;
+    height: 75%;
     gap: var(--nav);
     overflow-y: scroll;
 }
 
-.bureau::-webkit-scrollbar {
-    display: none;
+.info-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--general-margin);
+}
+
+.bureau .info-wrapper,
+.news .info-list {
+    margin-right: var(--general-margin);
+}
+
+.info-content {
+    grid-column-start: 2;
+}
+
+.info-content p {
+    text-indent: 20%;
+    margin-bottom: 1rem;
+}
+
+.info-content p:last-of-type {
+    margin-bottom: 0;
+}
+
+.info-content span {
+    font-weight: 500;
+}
+
+.info-list-content p:first-of-type {
+    width: fit-content;
+    font-weight: 500;
+    border-bottom: solid 1px var(--orange);
+}
+
+.bureau .info-list-content:not(:last-of-type) {
+    margin-bottom: 1rem;
+}
+
+.bureau .info-list-content img {
+    height: auto;
+    max-width: 250px;
+}
+
+.info-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--general-margin);
+}
+
+.info-images img {
+    width: 100%;
+    mix-blend-mode: luminosity;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.info-images img.appear {
+    opacity: 1;
 }
 
 .contact {
     height: 30vh;
     display: flex;
     justify-content: space-between;
+}
+
+.contact-block p:nth-child(1) {
+    display: inline-block;
+    border-bottom: solid 1px var(--orange);
 }
 
 .contact-block p:nth-child(1),
@@ -449,7 +523,7 @@ footer a:hover {
 }
 
 .project-info-link {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     align-items: baseline;
     gap: 1rem;
@@ -564,7 +638,7 @@ footer a:hover {
 .project-wrapper:nth-of-type(14)>.project-plan,
 .project-wrapper:nth-of-type(14)>.project-info {
     top: 83%;
-    left: 68%;
+    left: 75%;
 }
 
 .project-wrapper:nth-of-type(15)>.project,
@@ -755,6 +829,7 @@ footer a:hover {
     }
 
     nav {
+        display: block;
         font-size: var(--copy-txt);
         line-height: 1.2;
     }
@@ -860,7 +935,7 @@ footer a:hover {
         bottom: 4.5rem;
     }
 
-    .project-info-link {
+    .project .project-info-link {
         display: none;
     }
 
@@ -947,6 +1022,11 @@ footer a:hover {
         flex-direction: column;
         gap: calc(var(--general-margin)*2);
         border: 1px solid var(--bg-color);
+        padding-top: 3rem;
+    }
+
+    .news {
+        width: 100%;
     }
 
     .bureau,
@@ -956,6 +1036,29 @@ footer a:hover {
 
     .contact-logo {
         height: 16vh;
+    }
+
+    .info-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bureau .info-list {
+        order: 2;
+    }
+
+    .bureau .info-wrapper,
+    .news .info-list {
+        margin-right: 0;
+    }
+
+    .info-images {
+        margin-top: 1rem;
+        order: 1;
+    }
+
+    .info-images img {
+        opacity: 1;
     }
 
     .close-btn {
