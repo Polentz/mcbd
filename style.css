@@ -342,11 +342,11 @@ footer a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--general-margin);
+    mix-blend-mode: luminosity;
 }
 
 .info-images img {
     width: 100%;
-    mix-blend-mode: luminosity;
     opacity: 0;
     transition: opacity 1s ease;
 }
@@ -1055,10 +1055,6 @@ footer a:hover {
     .info-images {
         margin-top: 1rem;
         order: 1;
-    }
-
-    .info-images img {
-        opacity: 1;
     }
 
     .close-btn {
