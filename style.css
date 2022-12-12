@@ -252,7 +252,7 @@ footer a:hover {
 }
 
 .close-btn {
-    position: fixed;
+    position: absolute;
     top: var(--general-margin);
     right: var(--general-margin);
 }
@@ -261,7 +261,7 @@ footer a:hover {
     stroke: var(--txt-color);
 }
 
-.bureau,
+.about,
 .contact {
     border-top: 1px solid var(--bg-color);
 }
@@ -289,7 +289,7 @@ footer a:hover {
     margin-bottom: calc(var(--general-margin)*2);
 }
 
-.bureau {
+.about {
     height: 75%;
     gap: var(--nav);
     overflow-y: scroll;
@@ -301,7 +301,7 @@ footer a:hover {
     gap: var(--general-margin);
 }
 
-.bureau .info-wrapper,
+.about .info-wrapper,
 .news .info-list {
     margin-right: var(--general-margin);
 }
@@ -329,11 +329,11 @@ footer a:hover {
     border-bottom: solid 1px var(--orange);
 }
 
-.bureau .info-list-content:not(:last-of-type) {
+.about .info-list-content:not(:last-of-type) {
     margin-bottom: 1rem;
 }
 
-.bureau .info-list-content img {
+.about .info-list-content img {
     height: auto;
     max-width: 250px;
 }
@@ -1029,7 +1029,7 @@ footer a:hover {
         width: 100%;
     }
 
-    .bureau,
+    .about,
     .contact {
         height: var(--doc-height);
     }
@@ -1043,11 +1043,11 @@ footer a:hover {
         flex-direction: column;
     }
 
-    .bureau .info-list {
+    .about .info-list {
         order: 2;
     }
 
-    .bureau .info-wrapper,
+    .about .info-wrapper,
     .news .info-list {
         margin-right: 0;
     }
