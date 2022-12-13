@@ -361,7 +361,7 @@ footer a:hover {
     justify-content: space-between;
 }
 
-.contact div {
+.contact-block:not(:last-of-type) {
     margin: 0 1rem;
 }
 
@@ -382,6 +382,10 @@ footer a:hover {
 
 .contact-block p:last-child {
     margin-top: .5rem;
+}
+
+.contact-logo {
+    margin-right: 1rem;
 }
 
 .contact-logo svg {
@@ -1036,6 +1040,10 @@ footer a:hover {
     .about,
     .contact {
         height: var(--doc-height);
+    }
+
+    .contact-block:not(:last-of-type) {
+        margin: 0;
     }
 
     .contact-logo {
