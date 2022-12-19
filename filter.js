@@ -86,7 +86,6 @@ buttons.forEach(btn => {
             };
             btn.classList.add("active");
             filters.push({ category: btn.dataset.categories, value: btn.id });
-            console.log(filters);
         }
         filterProjects();
     });

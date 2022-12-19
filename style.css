@@ -62,31 +62,6 @@ body.home {
     }
 }
 
-.wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: hidden;
-}
-
-#cursor {
-    width: 48px;
-    height: 48px;
-    /* background: none;
-    border: 2px solid var(--orange);
-    border-radius: 50%; */
-    background-image: url("assets/cursor.svg");
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    /* transform-origin: center; */
-    /* margin: -10px 0 0 -10px; */
-    pointer-events: none;
-}
-
 .project.animation {
     transition: transform 0s;
     top: 50% !important;
@@ -149,7 +124,7 @@ header {
     color: var(--ecru);
     font-weight: 500;
     font-size: 1.2rem;
-    z-index: 5;
+    z-index: 6;
 }
 
 nav {
@@ -160,7 +135,8 @@ nav {
     gap: 2rem;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.current {
     color: var(--orange);
 }
 
@@ -233,11 +209,12 @@ footer a:hover {
     left: 0;
     bottom: 0;
     transform: translateY(100%);
-    z-index: 8;
+    z-index: 5;
     padding: var(--general-margin);
     font-size: var(--copy-txt);
     color: var(--txt-color);
     background-color: var(--light-ecru);
+    border: 1px solid var(--bg-color);
     opacity: 0;
     transition: opacity .5s ease;
 }
@@ -251,30 +228,38 @@ footer a:hover {
     display: none;
 }
 
+.slide-section h2 {
+    margin-bottom: 1rem;
+}
+
 .close-btn {
     position: absolute;
     top: var(--general-margin);
+}
+
+.news .close-btn,
+.contact .close-btn {
     right: var(--general-margin);
 }
 
-.close-btn svg {
-    stroke: var(--txt-color);
+.about .close-btn {
+    left: var(--general-margin);
 }
 
-.about,
+.close-btn svg {
+    stroke: var(--orange);
+}
+
+/* .about,
 .contact {
     border-top: 1px solid var(--bg-color);
-}
+} */
 
 .news {
     width: 50%;
     height: var(--doc-height);
-    border-right: 1px solid var(--bg-color);
+    /* border-right: 1px solid var(--bg-color); */
     overflow-y: scroll;
-}
-
-.news h2 {
-    margin-bottom: 1rem;
 }
 
 .news h3 {
@@ -290,7 +275,8 @@ footer a:hover {
 }
 
 .about {
-    height: 75%;
+    width: 100%;
+    height: var(--doc-height);
     gap: var(--nav);
     overflow-y: scroll;
 }
@@ -301,7 +287,12 @@ footer a:hover {
     gap: var(--general-margin);
 }
 
-.about .info-wrapper,
+
+.about .info-wrapper {
+    margin-top: var(--nav);
+    /* margin-right: var(--general-margin); */
+}
+
 .news .info-list {
     margin-right: var(--general-margin);
 }
@@ -339,15 +330,15 @@ footer a:hover {
 }
 
 .info-images {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--general-margin);
+    gap: var(--general-margin); */
     mix-blend-mode: luminosity;
 }
 
 .info-images img {
     width: 100%;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 1s ease;
 }
 
@@ -356,7 +347,7 @@ footer a:hover {
 }
 
 .contact {
-    height: 30vh;
+    height: 30%;
     display: flex;
     justify-content: space-between;
 }
@@ -729,6 +720,8 @@ footer a:hover {
 
 .project.filtered {
     fill: var(--orange);
+    transform: scale(1.1);
+
 }
 
 .project.hide {
@@ -1031,6 +1024,7 @@ footer a:hover {
         gap: calc(var(--general-margin)*2);
         border: 1px solid var(--bg-color);
         padding-top: 3rem;
+        z-index: 8;
     }
 
     .news {
@@ -1061,7 +1055,7 @@ footer a:hover {
 
     .about .info-wrapper,
     .news .info-list {
-        margin-right: 0;
+        margin: 0;
     }
 
     .info-images {
@@ -1069,9 +1063,8 @@ footer a:hover {
         order: 1;
     }
 
-    .close-btn {
-        position: absolute;
-        top: var(--general-margin);
+    .about .close-btn {
+        left: auto;
         right: var(--general-margin);
     }
 
