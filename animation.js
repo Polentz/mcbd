@@ -2,8 +2,6 @@ const logoName = document.querySelector(".logo-name");
 const logoNameFirst = document.getElementById("mcbd");
 const logoNameSecond = document.getElementById("architectes");
 const logoInit = document.querySelector(".logo-init");
-// const logoCompleto = document.querySelector(".logo-completo");
-// const logoNegativo = document.querySelector(".logo-negativo");
 const cover = document.querySelector(".animation-cover");
 
 const animation = sessionStorage.getItem("animation");

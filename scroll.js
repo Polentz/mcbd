@@ -43,15 +43,3 @@ btnRight.addEventListener("click", () => {
 });;
 
 
-
-// btnLeft.addEventListener("touchend", (e) => {
-//     e.preventDefault();
-//     plusSlides(-1);
-// });
-
-// btnRight.addEventListener("touchend", (e) => {
-//     e.preventDefault();
-//     plusSlides(1);
-// });
-
-
