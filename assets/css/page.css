@@ -26,12 +26,12 @@ body.page {
 
 .arrow-right {
     left: 50%;
-    cursor: -webkit-image-set(url(assets/arrow-right.svg) 1.4x), e-resize;
+    cursor: -webkit-image-set(url(assets/ui/arrow-right.svg) 1.4x), e-resize;
 }
 
 .arrow-left {
     right: 50%;
-    cursor: -webkit-image-set(url(assets/arrow-left.svg) 1.4x), w-resize;
+    cursor: -webkit-image-set(url(assets/ui/arrow-left.svg) 1.4x), w-resize;
 }
 
 /* .arrow-right svg,

@@ -154,7 +154,7 @@ nav h1 {
 .overlay.over {
     opacity: .95;
     pointer-events: all;
-    cursor: -webkit-image-set(url(assets/cursor-close.svg) 1.4x), crosshair;
+    cursor: -webkit-image-set(url(https://polentz.github.io/mcbd/assets/ui/cursor-close.svg) 1.4x), crosshair;
 }
 
 .close-all {
@@ -894,7 +894,7 @@ footer a:hover {
     } */
 
     .project-info h2 {
-        /* padding: var(--general-margin) 0; */
+        padding: var(--general-margin) 0;
         position: absolute;
         bottom: 4.5rem;
     }
@@ -959,9 +959,9 @@ footer a:hover {
         /* width: 1.5rem;
         stroke: var(--ecru);
         stroke-width: 2px; */
-        width: 10px;
+        width: 1rem;
         stroke: var(--ecru);
-        stroke-width: 4px;
+        stroke-width: 3px;
         cursor: pointer;
     }
 
@@ -969,7 +969,7 @@ footer a:hover {
         visibility: visible;
         pointer-events: all;
         position: fixed;
-        bottom: 6rem;
+        bottom: 7.3rem;
         right: var(--general-margin);
         z-index: 9;
     }
