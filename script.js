@@ -9,12 +9,12 @@ window.addEventListener("load", () => {
     history.scrollRestoration = "manual";
 });
 
-const links = document.querySelectorAll("nav a");
+const navLinks = document.querySelectorAll("nav a");
 const sections = document.querySelectorAll(".slide-section");
-const btns = document.querySelectorAll(".close-btn");
+const closeBtns = document.querySelectorAll(".close-btn");
 
-links.forEach(link => {
-    link.addEventListener("click", () => {
+navLinks.forEach(link => {
+    link.addEventListener("click", (e) => {
         sections.forEach(section => {
             if (link.id === `${section.id}-btn`) {
                 section.classList.toggle("open");
@@ -22,11 +22,10 @@ links.forEach(link => {
                 section.classList.remove("open");
             }
         });
-
     })
 });
 
-btns.forEach(btn => {
+closeBtns.forEach(btn => {
     btn.addEventListener("click", () => {
         sections.forEach(section => {
             if (btn.id === `${section.id}-close`) {
