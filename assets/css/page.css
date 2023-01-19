@@ -18,29 +18,18 @@ body.page {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    /* bottom: var(--general-margin);
-    padding: 0 1rem;
-    mix-blend-mode: difference; */
     z-index: 3;
 }
 
 .arrow-right {
     left: 50%;
-    cursor: -webkit-image-set(url(assets/ui/arrow-right.svg) 1.4x), e-resize;
+    cursor: -webkit-image-set(url("../ui/arrow-right.svg") 1.4x), e-resize;
 }
 
 .arrow-left {
     right: 50%;
-    cursor: -webkit-image-set(url(assets/ui/arrow-left.svg) 1.4x), w-resize;
+    cursor: -webkit-image-set(url("../ui/arrow-left.svg") 1.4x), w-resize;
 }
-
-/* .arrow-right svg,
-.arrow-left svg {
-    height: 2rem;
-    stroke: var(--bg-color);
-    stroke-width: 1px;
-    cursor: pointer;
-} */
 
 .filters--page {
     position: fixed;
@@ -104,7 +93,7 @@ body.page {
     z-index: 1;
 }
 
-.info-wrapper {
+.page-text {
     margin: var(--nav) 0 calc(var(--nav)*2) 0;
     padding: var(--general-margin);
     z-index: 2;
@@ -176,7 +165,7 @@ body.page {
         max-width: 100%;
     }
 
-    .info-wrapper {
+    .page-text {
         display: block;
         margin: 0;
     }
