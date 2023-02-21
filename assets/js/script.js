@@ -139,31 +139,40 @@ about.insertAdjacentHTML('beforeend', createAbout());
 contact.insertAdjacentHTML('beforeend', createContact());
 news.insertAdjacentHTML('beforeend', createNews());
 
-
 const navLinks = document.querySelectorAll("nav a");
 const sections = document.querySelectorAll(".slide-section");
 const closeBtns = document.querySelectorAll(".close-btn");
-
-navLinks.forEach(link => {
-    link.addEventListener("click", (e) => {
+const openSection = (event, section) => {
+    for (i = 0; i < navLinks.length; i++) {
+        navLinks[i].className = navLinks[i].className.replace(" current", "");
         sections.forEach(section => {
-            if (link.id === `${section.id}-btn`) {
-                section.classList.toggle("open");
-            } else {
+            if (navLinks[i].id != `${section.id}-btn`) {
                 section.classList.remove("open");
             }
         });
-    })
+    }
+    document.getElementById(section).classList.toggle("open");
+    event.currentTarget.className += " current";
+}
+const closeSection = () => {
+    sections.forEach(section => {
+        section.classList.remove("open");
+    });
+    navLinks.forEach(link => {
+        link.classList.remove("current")
+    });
+};
+document.getElementById("news-btn").addEventListener("click", (event) => {
+    openSection(event, "news");
 });
-
+document.getElementById("bureau-btn").addEventListener("click", (event) => {
+    openSection(event, "bureau");
+});
+document.getElementById("contact-btn").addEventListener("click", (event) => {
+    openSection(event, "contact");
+});
 closeBtns.forEach(btn => {
     btn.addEventListener("click", () => {
-        sections.forEach(section => {
-            if (btn.id === `${section.id}-close`) {
-                section.classList.toggle("open");
-            } else {
-                section.classList.remove("open");
-            }
-        });
-    })
+        closeSection();
+    });
 });
