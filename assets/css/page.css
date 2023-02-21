@@ -113,6 +113,12 @@ body.page {
     max-width: 75vw;
 }
 
+.page-gallery p {
+    font-size: .75rem;
+    color: var(--orange);
+    margin-top: .5rem;
+}
+
 /* .appear {
     opacity: 1;
 } */
