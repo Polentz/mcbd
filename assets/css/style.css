@@ -687,29 +687,37 @@ footer a:hover {
 .project-wrapper:nth-of-type(9)>.project,
 .project-wrapper:nth-of-type(9)>.project-plan,
 .project-wrapper:nth-of-type(9)>.project-info {
-    top: 30%;
-    left: 55%;
+    /* top: 30%;
+    left: 55%; */
+    top: 33%;
+    left: 54%;
 }
 
 .project-wrapper:nth-of-type(10)>.project,
 .project-wrapper:nth-of-type(10)>.project-plan,
 .project-wrapper:nth-of-type(10)>.project-info {
-    top: 40%;
-    left: 75%;
+    /* top: 40%;
+    left: 75%; */
+    top: 33%;
+    left: 81%;
 }
 
 .project-wrapper:nth-of-type(11)>.project,
 .project-wrapper:nth-of-type(11)>.project-plan,
 .project-wrapper:nth-of-type(11)>.project-info {
-    top: 48%;
-    left: 60%;
+    /* top: 48%;
+    left: 60%; */
+    top: 43%;
+    left: 67%;
 }
 
 .project-wrapper:nth-of-type(12)>.project,
 .project-wrapper:nth-of-type(12)>.project-plan,
 .project-wrapper:nth-of-type(12)>.project-info {
-    top: 42%;
-    left: 40%;
+    /* top: 42%;
+    left: 40%; */
+    top: 54%;
+    left: 47%;
 }
 
 .project-wrapper:nth-of-type(13)>.project,
@@ -750,15 +758,19 @@ footer a:hover {
 .project-wrapper:nth-of-type(18)>.project,
 .project-wrapper:nth-of-type(18)>.project-plan,
 .project-wrapper:nth-of-type(18)>.project-info {
+    /* top: 82%;
+    left: 35%; */
     top: 82%;
-    left: 35%;
+    left: 30%;
 }
 
 .project-wrapper:nth-of-type(19)>.project,
 .project-wrapper:nth-of-type(19)>.project-plan,
 .project-wrapper:nth-of-type(19)>.project-info {
-    top: 68%;
-    left: 55%;
+    /* top: 68%;
+    left: 55%; */
+    top: 65%;
+    left: 60%;
 }
 
 .project-wrapper:nth-of-type(20)>.project,
@@ -766,6 +778,15 @@ footer a:hover {
 .project-wrapper:nth-of-type(20)>.project-info {
     top: 40%;
     left: 27%;
+}
+
+.project-wrapper:nth-of-type(21)>.project,
+.project-wrapper:nth-of-type(21)>.project-plan,
+.project-wrapper:nth-of-type(21)>.project-info {
+    /* top: 40%;
+    left: 27%; */
+    top: 75%;
+    left: 52%;
 }
 
 .project-wrapper:nth-of-type(5)>.project-info,
@@ -803,7 +824,8 @@ footer a:hover {
 .project-wrapper:nth-of-type(16)>.project-info,
 .project-wrapper:nth-of-type(17)>.project-info,
 .project-wrapper:nth-of-type(18)>.project-info,
-.project-wrapper:nth-of-type(19)>.project-info {
+.project-wrapper:nth-of-type(19)>.project-info,
+.project-wrapper:nth-of-type(21)>.project-info {
     -webkit-transform: translate(-30%, -150%);
     -ms-transform: translate(-30%, -150%);
     transform: translate(-30%, -150%);
@@ -889,8 +911,10 @@ footer a:hover {
 }
 
 .project-wrapper--lv .project-info {
-    margin-top: 10%;
-    margin-left: -5%;
+    /* margin-top: 10%;
+    margin-left: -5%; */
+    margin-top: -2%;
+    left: 50%;
 }
 
 .show-info {

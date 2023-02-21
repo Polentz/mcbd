@@ -182,14 +182,14 @@ const projects = [
         materiaux: [materiaux.mixte, materiaux.bois],
         elements: [elements.exterieur, elements.foyer]
     },
-    // {
-    //     id: "22-per",
-    //     name: "22 PER",
-    //     fonction: [fonction.logement],
-    //     action: [action.construction],
-    //     materiaux: [materiaux.terre, materiaux.bois],
-    //     elements: [elements.interieur, elements.facade]
-    // },
+    {
+        id: "22-per",
+        name: "22 PER",
+        fonction: [fonction.logement],
+        action: [action.construction],
+        materiaux: [materiaux.terre, materiaux.bois],
+        elements: [elements.interieur, elements.facade]
+    },
     {
         id: "22-sif",
         name: "22 SIF",
