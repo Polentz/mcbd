@@ -101,6 +101,7 @@ buttonClear.addEventListener("click", () => {
     filterProjects();
 });
 
+
 const projectShape = document.querySelectorAll(".project");
 const projectDiv = document.querySelectorAll(".project-wrapper--lv, .project-wrapper");
 const overlay = document.getElementById("overlay");

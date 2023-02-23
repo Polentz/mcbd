@@ -144,15 +144,15 @@ const sections = document.querySelectorAll(".slide-section");
 const closeBtns = document.querySelectorAll(".close-btn");
 const openSection = (event, section) => {
     for (i = 0; i < navLinks.length; i++) {
-        navLinks[i].className = navLinks[i].className.replace(" current", "");
+        navLinks[i].className = navLinks[i].className.replace("current", "");
         sections.forEach(section => {
             if (navLinks[i].id != `${section.id}-btn`) {
                 section.classList.remove("open");
-            }
+            };
         });
-    }
+    };
     document.getElementById(section).classList.toggle("open");
-    event.currentTarget.className += " current";
+    event.currentTarget.className += "current";
 }
 const closeSection = () => {
     sections.forEach(section => {

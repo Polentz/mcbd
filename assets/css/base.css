@@ -121,6 +121,10 @@ q {
     quotes: none;
 }
 
+em {
+    font-style: italic;
+}
+
 blockquote:after,
 blockquote:before,
 q:after,

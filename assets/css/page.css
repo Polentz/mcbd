@@ -1,34 +1,34 @@
 body.page {
     overflow: hidden;
+    cursor: none;
 }
 
-.page-title {
-    position: fixed;
-    bottom: var(--general-margin);
-    left: var(--general-margin);
-    color: var(--bg-color);
-    mix-blend-mode: difference;
-    z-index: 3;
+nav,
+footer,
+.slide-section {
+    cursor: default;
 }
 
-.arrow-left,
-.arrow-right {
-    width: 50%;
-    height: 75%;
+a,
+video {
+    cursor: pointer;
+}
+
+.page-container a {
+    cursor: pointer;
+}
+
+.cursor {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 3;
-}
-
-.arrow-right {
-    left: 50%;
-    cursor: -webkit-image-set(url("../ui/arrow-right.svg") 1.4x), e-resize;
-}
-
-.arrow-left {
-    right: 50%;
-    cursor: -webkit-image-set(url("../ui/arrow-left.svg") 1.4x), w-resize;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    z-index: 4;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .filters--page {
@@ -56,6 +56,7 @@ body.page {
 .page-container {
     height: var(--doc-height);
     width: 100%;
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -66,6 +67,7 @@ body.page {
 .page-container section {
     width: 100%;
     height: 100%;
+    max-height: 100%;
     flex-direction: column;
 }
 
@@ -81,6 +83,7 @@ body.page {
 .page-info {
     color: var(--txt-color);
     align-items: flex-start;
+    overflow-y: scroll;
 }
 
 .page-siteplan {
@@ -94,7 +97,7 @@ body.page {
 }
 
 .page-text {
-    margin: var(--nav) 0 calc(var(--nav)*2) 0;
+    margin: var(--nav) 0;
     padding: var(--general-margin);
     z-index: 2;
 }
@@ -113,20 +116,30 @@ body.page {
     max-width: 75vw;
 }
 
+.page-gallery video {
+    width: 60vw;
+}
+
+.video-cover {
+    display: none;
+}
+
 .page-gallery p {
     font-size: .75rem;
     color: var(--orange);
     margin-top: .5rem;
+    text-align: center;
 }
-
-/* .appear {
-    opacity: 1;
-} */
 
 @media screen and (max-width: 720px) {
     body.page {
         overflow-y: scroll;
         overflow-x: hidden;
+        cursor: default;
+    }
+
+    .cursor {
+        display: none;
     }
 
     .page-container {
@@ -154,7 +167,7 @@ body.page {
         position: static;
         pointer-events: all;
         mix-blend-mode: unset;
-        filter: invert(0);
+        filter: opacity(0.5);
         z-index: 2;
         display: block;
     }
@@ -162,8 +175,6 @@ body.page {
     .page-gallery {
         height: auto;
         padding: 2rem 1rem;
-        /* opacity: 0;
-        transition: opacity 1s ease; */
     }
 
     .page-gallery img {
@@ -171,12 +182,16 @@ body.page {
         max-width: 100%;
     }
 
+    .page-gallery video {
+        display: none;
+    }
+
+    .video-cover {
+        display: block;
+    }
+
     .page-text {
         display: block;
         margin: 0;
     }
-
-    /* .appear {
-        opacity: 1;
-    } */
 }

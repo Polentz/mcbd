@@ -723,8 +723,10 @@ footer a:hover {
 .project-wrapper:nth-of-type(13)>.project,
 .project-wrapper:nth-of-type(13)>.project-plan,
 .project-wrapper:nth-of-type(13)>.project-info {
-    top: 50%;
-    left: 12%;
+    /* top: 50%;
+    left: 12%; */
+    top: 53%;
+    left: 15%;
 }
 
 .project-wrapper:nth-of-type(14)>.project,
@@ -744,8 +746,10 @@ footer a:hover {
 .project-wrapper:nth-of-type(16)>.project,
 .project-wrapper:nth-of-type(16)>.project-plan,
 .project-wrapper:nth-of-type(16)>.project-info {
-    top: 65%;
-    left: 21%;
+    /* top: 65%;
+    left: 21%; */
+    top: 72%;
+    left: 17%;
 }
 
 .project-wrapper:nth-of-type(17)>.project,
@@ -857,7 +861,7 @@ footer a:hover {
     align-items: flex-end;
     gap: var(--general-margin);
     padding: var(--general-margin);
-    margin: var(--nav) 0 calc(var(--nav)*2) 0;
+    margin: var(--nav) 0;
 }
 
 .project-wrapper--lv {
@@ -892,6 +896,18 @@ footer a:hover {
 
 .project-list--lv img {
     height: var(--project-size);
+    -webkit-filter: grayscale(1) opacity(.85);
+    filter: grayscale(1) opacity(.85);
+    -webkit-transition: -webkit-filter 1.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: -webkit-filter 1.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: filter 1.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: filter 1.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: filter 1.25s cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-filter 1.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.project--lv:hover~.project-list--lv img {
+    -webkit-filter: none;
+    filter: none;
 }
 
 .project-title--lv {
@@ -913,8 +929,12 @@ footer a:hover {
 .project-wrapper--lv .project-info {
     /* margin-top: 10%;
     margin-left: -5%; */
-    margin-top: -2%;
-    left: 50%;
+
+    /* margin-top: -2%;
+    left: 50%; */
+
+    margin-top: 10%;
+    margin-left: -10%;
 }
 
 .show-info {
