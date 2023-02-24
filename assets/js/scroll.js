@@ -2,7 +2,7 @@ let slideIndex = 1;
 
 const plusSlides = (n) => {
     showSlides(slideIndex += n);
-}
+};
 
 const showSlides = (n) => {
     let i;
@@ -25,7 +25,7 @@ const handleMediaQuery = (e) => {
         return false
     } else {
         showSlides(slideIndex);
-    }
+    };
 };
 
 mediaQuery.addListener(handleMediaQuery);

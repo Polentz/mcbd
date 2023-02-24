@@ -1,7 +1,7 @@
 :root {
     --doc-height: 100%;
     --txt-color: #171a19;
-    --bg-color: #ffffff;
+    --bg-color: #fafafa;
     --orange: #e24011;
     --ecru: #c0b490;
     --light-ecru: #ded6bf;
@@ -118,6 +118,14 @@ body.home {
     width: 100%;
     -webkit-filter: opacity(0);
     filter: opacity(0);
+}
+
+.fill-white {
+    fill: var(--bg-color);
+}
+
+.fill-black {
+    fill: var(--txt-color);
 }
 
 .logo-init svg {
@@ -427,8 +435,6 @@ footer a:hover {
     fill: var(--txt-color);
 }
 
-/* filters */
-
 .filters {
     height: var(--doc-height);
     padding: var(--general-margin);
@@ -514,8 +520,6 @@ footer a:hover {
 .filter-clear p:hover {
     color: var(--ecru);
 }
-
-/* projects */
 
 .projects {
     -webkit-animation: fadeIn 1s ease-in-out 1;
@@ -687,8 +691,6 @@ footer a:hover {
 .project-wrapper:nth-of-type(9)>.project,
 .project-wrapper:nth-of-type(9)>.project-plan,
 .project-wrapper:nth-of-type(9)>.project-info {
-    /* top: 30%;
-    left: 55%; */
     top: 33%;
     left: 54%;
 }
@@ -696,8 +698,6 @@ footer a:hover {
 .project-wrapper:nth-of-type(10)>.project,
 .project-wrapper:nth-of-type(10)>.project-plan,
 .project-wrapper:nth-of-type(10)>.project-info {
-    /* top: 40%;
-    left: 75%; */
     top: 33%;
     left: 81%;
 }
@@ -705,8 +705,6 @@ footer a:hover {
 .project-wrapper:nth-of-type(11)>.project,
 .project-wrapper:nth-of-type(11)>.project-plan,
 .project-wrapper:nth-of-type(11)>.project-info {
-    /* top: 48%;
-    left: 60%; */
     top: 43%;
     left: 67%;
 }
@@ -714,8 +712,6 @@ footer a:hover {
 .project-wrapper:nth-of-type(12)>.project,
 .project-wrapper:nth-of-type(12)>.project-plan,
 .project-wrapper:nth-of-type(12)>.project-info {
-    /* top: 42%;
-    left: 40%; */
     top: 54%;
     left: 47%;
 }
@@ -723,8 +719,6 @@ footer a:hover {
 .project-wrapper:nth-of-type(13)>.project,
 .project-wrapper:nth-of-type(13)>.project-plan,
 .project-wrapper:nth-of-type(13)>.project-info {
-    /* top: 50%;
-    left: 12%; */
     top: 53%;
     left: 15%;
 }
@@ -746,8 +740,6 @@ footer a:hover {
 .project-wrapper:nth-of-type(16)>.project,
 .project-wrapper:nth-of-type(16)>.project-plan,
 .project-wrapper:nth-of-type(16)>.project-info {
-    /* top: 65%;
-    left: 21%; */
     top: 72%;
     left: 17%;
 }
@@ -762,8 +754,6 @@ footer a:hover {
 .project-wrapper:nth-of-type(18)>.project,
 .project-wrapper:nth-of-type(18)>.project-plan,
 .project-wrapper:nth-of-type(18)>.project-info {
-    /* top: 82%;
-    left: 35%; */
     top: 82%;
     left: 30%;
 }
@@ -771,8 +761,6 @@ footer a:hover {
 .project-wrapper:nth-of-type(19)>.project,
 .project-wrapper:nth-of-type(19)>.project-plan,
 .project-wrapper:nth-of-type(19)>.project-info {
-    /* top: 68%;
-    left: 55%; */
     top: 65%;
     left: 60%;
 }
@@ -787,8 +775,6 @@ footer a:hover {
 .project-wrapper:nth-of-type(21)>.project,
 .project-wrapper:nth-of-type(21)>.project-plan,
 .project-wrapper:nth-of-type(21)>.project-info {
-    /* top: 40%;
-    left: 27%; */
     top: 75%;
     left: 52%;
 }
@@ -845,8 +831,6 @@ footer a:hover {
     filter: opacity(0);
     pointer-events: none;
 }
-
-/* list view */
 
 .projects--lv {
     display: -webkit-box;
@@ -927,12 +911,6 @@ footer a:hover {
 }
 
 .project-wrapper--lv .project-info {
-    /* margin-top: 10%;
-    margin-left: -5%; */
-
-    /* margin-top: -2%;
-    left: 50%; */
-
     margin-top: 10%;
     margin-left: -10%;
 }
@@ -1159,9 +1137,6 @@ footer a:hover {
     }
 
     .overlay svg {
-        /* width: 1.5rem;
-        stroke: var(--ecru);
-        stroke-width: 2px; */
         width: 1rem;
         stroke: var(--ecru);
         stroke-width: 3px;

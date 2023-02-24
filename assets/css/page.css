@@ -22,6 +22,8 @@ video {
     position: absolute;
     top: 0;
     left: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 2.5rem;
     height: 2.5rem;
@@ -34,6 +36,8 @@ video {
 .filters--page {
     position: fixed;
     height: auto;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     gap: .5rem;
     overflow-y: hidden;
@@ -57,10 +61,19 @@ video {
     height: var(--doc-height);
     width: 100%;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-animation: fadeIn 1s ease-in-out 1;
     animation: fadeIn 1s ease-in-out 1;
 }
 
@@ -68,6 +81,9 @@ video {
     width: 100%;
     height: 100%;
     max-height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -82,6 +98,8 @@ video {
 
 .page-info {
     color: var(--txt-color);
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     overflow-y: scroll;
 }
@@ -103,7 +121,11 @@ video {
 }
 
 .page-gallery {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: calc(var(--general-margin)*2);
     z-index: 2;
@@ -149,6 +171,8 @@ video {
     }
 
     .page-container section {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
         display: flex !important;
     }
 
@@ -167,6 +191,7 @@ video {
         position: static;
         pointer-events: all;
         mix-blend-mode: unset;
+        -webkit-filter: opacity(0.5);
         filter: opacity(0.5);
         z-index: 2;
         display: block;

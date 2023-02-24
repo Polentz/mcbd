@@ -30,7 +30,7 @@ const createAbout = () => {
     <div class="info-list">
         <h2>ÉQUIPE</h2>
         <div class="info-list-content">
-            <p>associés</p>
+            <p>associés :</p>
             <p>Marcel Croubalian (architecte diplômé en 1993 à Genève, EAUG SIA)</p>
             <p>Bernard Delacoste (architecte diplômé en 1995 à Lausanne, EPFL SIA)</p>
         </div>

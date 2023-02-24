@@ -49,7 +49,7 @@ const removeActiveClassFromButtons = (btns) => {
     btns.forEach(b => {
         b.classList.remove("active");
     });
-}
+};
 
 const buttons = document.querySelectorAll(".filter-btn");
 const buttonsFonction = document.querySelectorAll("#fonction .filter-btn");
@@ -86,7 +86,7 @@ buttons.forEach(btn => {
             };
             btn.classList.add("active");
             filters.push({ category: btn.dataset.categories, value: btn.id });
-        }
+        };
         filterProjects();
     });
 });
@@ -120,14 +120,14 @@ projectShape.forEach(shape => {
                 info.classList.add("show-info");
                 overlay.classList.add("over");
                 toThePage.classList.add("show-info");
-            }
+            };
             const removeClasses = () => {
                 shape.classList.remove("hide");
                 plan.classList.remove("show-info");
                 info.classList.remove("show-info");
                 overlay.classList.remove("over");
                 toThePage.classList.remove("show-info");
-            }
+            };
             shape.addEventListener("click", () => {
                 addClasses();
                 overlay.addEventListener("click", () => {

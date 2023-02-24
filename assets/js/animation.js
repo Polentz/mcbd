@@ -42,5 +42,5 @@ if (animation === "done") {
         setTimeout(() => {
             cover.style.display = "none";
         }, 5000);
-    })
-}
+    });
+};
