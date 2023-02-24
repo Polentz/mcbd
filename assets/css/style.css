@@ -951,7 +951,7 @@ footer a:hover {
 @media screen and (max-width: 720px) {
     :root {
         --general-margin: 1rem;
-        --large-txt: calc(2vw + 2rem);
+        --large-txt: calc(2vw + 2.5rem);
     }
 
     body.home {
