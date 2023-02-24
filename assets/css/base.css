@@ -6,6 +6,7 @@
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scrollbar-width: none;
 }
 
 a,
@@ -169,7 +170,7 @@ input {
     outline: 0;
 }
 
-::-webkit-scrollbar {
+*::-webkit-scrollbar {
     display: none;
 }
 

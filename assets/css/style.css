@@ -282,10 +282,6 @@ footer a:hover {
     opacity: 1;
 }
 
-.slide-section::-webkit-scrollbar {
-    display: none;
-}
-
 .slide-section h2 {
     margin-bottom: 1rem;
 }
@@ -453,13 +449,8 @@ footer a:hover {
     left: 0;
     z-index: 2;
     overflow-y: scroll;
-    scrollbar-width: none;
     -webkit-animation: fadeIn 1s ease-in-out 1;
     animation: fadeIn 1s ease-in-out 1;
-}
-
-.filters::-webkit-scrollbar {
-    display: none;
 }
 
 .filter-list {
