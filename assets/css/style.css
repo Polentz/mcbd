@@ -1,7 +1,7 @@
 :root {
     --doc-height: 100%;
     --txt-color: #171a19;
-    --bg-color: #fafafa;
+    --bg-color: #fefefe;
     --orange: #e24011;
     --ecru: #c0b490;
     --light-ecru: #ded6bf;
@@ -44,9 +44,32 @@ body {
 
 a {
     cursor: pointer;
-    -webkit-transition: color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    -o-transition: color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    transition: color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-bottom: 1px solid var(--txt-color);
+    -webkit-transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+a:hover {
+    color: var(--ecru);
+    border-bottom: 1px solid var(--orange);
+}
+
+nav a,
+footer a,
+.project-title--lv,
+.page-gallery a,
+.close-btn {
+    border-bottom: none;
+}
+
+nav a:hover,
+footer a:hover,
+.project-title--lv:hover,
+.page-gallery a:hover,
+.close-btn:hover {
+    color: inherit;
+    border-bottom: none;
 }
 
 h2 {
@@ -316,10 +339,10 @@ footer a:hover {
 }
 
 .close-btn svg {
-    width: var(--cursor-size);
     display: block;
+    width: 1rem;
     stroke: var(--orange);
-    stroke-width: 2px;
+    stroke-width: 4px;
 }
 
 .news {
@@ -431,10 +454,6 @@ footer a:hover {
 .contact-block a {
     font-weight: 500;
     margin-bottom: .5rem;
-}
-
-.contact-block a:hover {
-    color: var(--ecru);
 }
 
 .contact-block p:last-child {
@@ -629,13 +648,6 @@ footer a:hover {
 .project-info-link a {
     font-weight: 400;
     font-size: var(--copy-txt);
-    -webkit-transition: color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    -o-transition: color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    transition: color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.project-info-link a:hover {
-    color: var(--ecru);
 }
 
 .project-info-link svg {
@@ -1195,11 +1207,6 @@ footer a:hover {
         z-index: 8;
     }
 
-    .close-btn svg {
-        width: 1rem;
-        stroke-width: 4px;
-    }
-
     .news {
         width: 100%;
     }
@@ -1252,6 +1259,11 @@ footer a:hover {
 
     footer {
         gap: var(--general-margin);
+    }
+
+    a:hover {
+        color: var(--txt-color);
+        border-bottom: 1px solid var(--txt-color);
     }
 
     .filter-btn.active:hover {

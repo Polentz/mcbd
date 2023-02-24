@@ -112,6 +112,7 @@ video {
     -ms-flex-pack: center;
     justify-content: center;
     padding: calc(var(--general-margin)*2);
+    mix-blend-mode: multiply;
     z-index: 2;
 }
 

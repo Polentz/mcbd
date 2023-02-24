@@ -76,4 +76,12 @@ pageContainer.addEventListener("click", () => {
     };
 });
 
-
+const allProjectsBtn = document.querySelector(".footer--page a");
+const navigationHistory = window.history.length;
+allProjectsBtn.addEventListener("click", () => {
+    if (navigationHistory == 1) {
+        allProjectsBtn.setAttribute("href", "index.html");
+    } else {
+        history.back();
+    };
+});
