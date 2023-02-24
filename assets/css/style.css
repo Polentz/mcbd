@@ -225,7 +225,6 @@ nav h1 {
     opacity: .95;
     pointer-events: all;
     cursor: none;
-    /* cursor: -webkit-image-set(url("../ui/cursor-close.svg") 1.4x), crosshair; */
 }
 
 .close-all {
