@@ -925,6 +925,14 @@ footer a:hover {
     margin-left: -10%;
 }
 
+.project-wrapper--lv:nth-of-type(20) .project-info {
+    margin-left: 0%;
+}
+
+.project-wrapper--lv:nth-of-type(21) .project-info {
+    margin-top: -15%;
+}
+
 .show-info {
     display: block;
 }
