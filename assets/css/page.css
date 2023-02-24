@@ -181,8 +181,8 @@ video {
         position: static;
         pointer-events: all;
         mix-blend-mode: unset;
-        -webkit-filter: opacity(0.5);
-        filter: opacity(0.5);
+        -webkit-filter: opacity(.8);
+        filter: opacity(.8);
         z-index: 2;
         display: block;
     }
