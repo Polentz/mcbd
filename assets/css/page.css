@@ -1,12 +1,11 @@
 body.page {
     overflow: hidden;
-    cursor: none;
 }
 
-nav,
-footer,
-.slide-section {
-    cursor: default;
+.page-title,
+.filters--page,
+.page-container {
+    cursor: none;
 }
 
 a,
@@ -16,21 +15,6 @@ video {
 
 .page-container a {
     cursor: pointer;
-}
-
-.cursor {
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 2.5rem;
-    height: 2.5rem;
-    z-index: 4;
-    pointer-events: none;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 .filters--page {
@@ -157,7 +141,12 @@ video {
     body.page {
         overflow-y: scroll;
         overflow-x: hidden;
-        cursor: default;
+    }
+
+    .page-title,
+    .filters--page,
+    .page-container {
+        cursor: revert;
     }
 
     .cursor {

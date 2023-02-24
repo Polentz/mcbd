@@ -135,7 +135,6 @@ projectShape.forEach(shape => {
                 });
                 anchorTag.forEach(a => {
                     a.setAttribute("href", projectUrl);
-                    console.log(projectUrl);
                 });
             });
             anchorTag.forEach(a => {
@@ -156,4 +155,23 @@ filterBtn.addEventListener("click", () => {
         element.classList.toggle("open-filter");
     });
     filterUi.classList.toggle("rotate");
+});
+
+const cursor = document.createElement("div");
+cursor.classList.add("cursor");
+document.body.appendChild(cursor);
+
+overlay.addEventListener("mouseenter", () => {
+    cursor.style.backgroundImage = "url('assets/ui/cursor-close.svg')";
+});
+
+overlay.addEventListener("mouseleave", () => {
+    cursor.style.backgroundImage = "none";
+});
+
+overlay.addEventListener("mousemove", (event) => {
+    let x = event.pageX;
+    let y = event.pageY;
+    cursor.style.left = x + "px";
+    cursor.style.top = y + "px";
 });

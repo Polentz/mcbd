@@ -13,6 +13,25 @@
     --project-size: calc(3vw + 2rem);
 }
 
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 body {
     font-family: halyard-display, sans-serif;
@@ -46,24 +65,19 @@ body.home {
     overflow: hidden;
 }
 
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+.cursor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    z-index: 4;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .project.animation {
@@ -209,7 +223,8 @@ nav h1 {
 .overlay.over {
     opacity: .95;
     pointer-events: all;
-    cursor: -webkit-image-set(url("../ui/cursor-close.svg") 1.4x), crosshair;
+    cursor: none;
+    /* cursor: -webkit-image-set(url("../ui/cursor-close.svg") 1.4x), crosshair; */
 }
 
 .close-all {
@@ -301,7 +316,11 @@ footer a:hover {
 }
 
 .close-btn svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: block;
     stroke: var(--orange);
+    stroke-width: 2px;
 }
 
 .news {
@@ -919,6 +938,11 @@ footer a:hover {
     body.home {
         overflow-y: scroll;
         overflow-x: hidden;
+        cursor: revert;
+    }
+
+    .cursor {
+        display: none;
     }
 
     .logo-init {
@@ -1126,13 +1150,14 @@ footer a:hover {
 
     .overlay.over {
         opacity: 1;
+        cursor: revert;
     }
 
     .overlay svg {
+        display: block;
         width: 1rem;
         stroke: var(--ecru);
         stroke-width: 3px;
-        cursor: pointer;
     }
 
     .to-the-page {
@@ -1161,6 +1186,11 @@ footer a:hover {
         border: 1px solid var(--bg-color);
         padding-top: 3rem;
         z-index: 8;
+    }
+
+    .close-btn svg {
+        width: 1rem;
+        stroke-width: 3px;
     }
 
     .news {

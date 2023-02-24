@@ -63,8 +63,8 @@ const createAbout = () => {
     </div>
     </div>
     <a id="bureau-close" class="close-btn">
-        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9 1L1 9M9 9L1 1" />
+        <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M49 1L1 49M49 49L1 1" />
         </svg>
     </a>`;
 };
@@ -99,8 +99,8 @@ const createContact = () => {
     </div>
     <div class="contact-block">
         <a id="contact-close" class="close-btn">
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 1L1 9M9 9L1 1" />
+            <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M49 1L1 49M49 49L1 1" />
             </svg>
         </a>
     </div>`;
@@ -127,8 +127,8 @@ const createNews = () => {
     </div>
     </div>
     <a id="news-close" class="close-btn">
-        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9 1L1 9M9 9L1 1" />
+        <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M49 1L1 49M49 49L1 1" />
         </svg>
     </a>`;
 };
