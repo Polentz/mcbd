@@ -11,6 +11,7 @@
     --medium-txt: 1.5rem;
     --large-txt: calc(2vw + 3rem);
     --project-size: calc(3vw + 2rem);
+    --cursor-size: 2.5rem;
 }
 
 @-webkit-keyframes fadeIn {
@@ -72,8 +73,8 @@ body.home {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 2.5rem;
-    height: 2.5rem;
+    width: var(--cursor-size);
+    height: var(--cursor-size);
     z-index: 4;
     pointer-events: none;
     background-repeat: no-repeat;
@@ -316,8 +317,7 @@ footer a:hover {
 }
 
 .close-btn svg {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: var(--cursor-size);
     display: block;
     stroke: var(--orange);
     stroke-width: 2px;
@@ -1190,7 +1190,7 @@ footer a:hover {
 
     .close-btn svg {
         width: 1rem;
-        stroke-width: 3px;
+        stroke-width: 4px;
     }
 
     .news {
