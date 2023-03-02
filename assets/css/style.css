@@ -486,6 +486,7 @@ footer a:hover {
     left: 0;
     z-index: 2;
     overflow-y: scroll;
+    pointer-events: none;
     -webkit-animation: fadeIn 1s ease-in-out 1;
     animation: fadeIn 1s ease-in-out 1;
 }
@@ -502,6 +503,7 @@ footer a:hover {
 
 .filter-category {
     font-weight: 500;
+    pointer-events: all;
 }
 
 .filter-btn {
@@ -510,6 +512,7 @@ footer a:hover {
     width: fit-content;
     color: var(--ecru);
     cursor: pointer;
+    pointer-events: all;
     -webkit-transition: color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
     -o-transition: color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
     transition: color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
