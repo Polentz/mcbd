@@ -81,6 +81,7 @@ video {
 }
 
 .page-info {
+    font-size: var(--copy-txt);
     color: var(--txt-color);
     -webkit-box-align: start;
     -ms-flex-align: start;
@@ -131,11 +132,20 @@ video {
     display: none;
 }
 
-.page-gallery p {
-    font-size: .75rem;
-    color: var(--orange);
-    margin-top: .5rem;
-    text-align: center;
+@media screen and (min-width: 1500px) {
+    .page-info {
+        font-size: 1.6rem;
+    }
+
+    .page-info .info-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .page-info .info-content {
+        -ms-grid-column: 3;
+        grid-column: 3;
+        grid-column-start: 3;
+    }
 }
 
 @media screen and (max-width: 720px) {
