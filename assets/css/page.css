@@ -132,6 +132,13 @@ video {
     display: none;
 }
 
+.page-gallery p {
+    font-size: .75rem;
+    color: var(--orange);
+    margin-top: .5rem;
+    text-align: center;
+}
+
 @media screen and (min-width: 1500px) {
     .page-info {
         font-size: 1.6rem;
