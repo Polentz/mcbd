@@ -55,7 +55,7 @@ const createAbout = () => {
         </div>
         <div class="info-list-content">
             <p>site web :</p>
-            <p>Giulia Polenta</p>
+            <p><a href="https://www.iampolenta.com/" target="_blank">Giulia Polenta</a></p>
         </div>
     </div>
     <div class="info-images">
