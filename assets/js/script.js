@@ -108,23 +108,34 @@ const createContact = () => {
 const createNews = () => {
     return `
     <div class="info-list">
-    <div class="info-list-content">
-        <h2>LA SALLE DE LA GARE</h2>
-        <h3>12.12.2022</h3>
-        <p>La Ville de Monthey rénove et transforme</p>
-        <p>Ancien théâtre puis salle municipale de la Ville de Monthey, la salle de la Gare est
-            ancrée dans la tradition culturelle est sociale de la commune depuis sa construction
-            au début du XXe siècle. Elle profite aujourd'hui d'une rénovation et d'un réaménagement de ses
-            espaces afin de répondre aux standards actuels et aux spécificités de
-            ses différentes utilisations.</p>
-        <div class="project-info-link">
-            <a href="assets/media/news/panneau_salle_de_la_gare.pdf" target="_blank">pour en savoir
-                plus</a>
-            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.34326 4.5H0.343262M4.34318 0.5L8.23227 4.5L4.34318 8.5" />
-            </svg>
+        <div class="info-list-content">
+            <h2>RAUM UND WOHNEN</h2>
+            <h3>Magazine 08/09.2024</h3>
+            <p>Lieu de retraite</p>
+            <p>Au cœur des Cyclades, sur l'île de Sifnos, se trouvent deux petites maisons, qui s'intègrent parfaitement dans les oliveraies en terrasses d'une vallée pittoresque. La famille d'architectes Delacoste a créé ici un lieu de calme et de beauté naturelle qui permet de laisser son âme vagabonder.</p>
+            <div class="project-info-link">
+                <a href="assets/media/news/RuW_8_9_24_Wohnen - Griechenland.pdf" target="_blank">pour en savoir plus</a>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.34326 4.5H0.343262M4.34318 0.5L8.23227 4.5L4.34318 8.5" />
+                </svg>
+            </div>
         </div>
-    </div>
+        <div class="info-list-content">
+            <h2>LA SALLE DE LA GARE</h2>
+            <h3>12.12.2022</h3>
+            <p>La Ville de Monthey rénove et transforme</p>
+            <p>Ancien théâtre puis salle municipale de la Ville de Monthey, la salle de la Gare est
+                ancrée dans la tradition culturelle est sociale de la commune depuis sa construction
+                au début du XXe siècle. Elle profite aujourd'hui d'une rénovation et d'un réaménagement de ses
+                espaces afin de répondre aux standards actuels et aux spécificités de
+                ses différentes utilisations.</p>
+            <div class="project-info-link">
+                <a href="assets/media/news/panneau_salle_de_la_gare.pdf" target="_blank">pour en savoir plus</a>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.34326 4.5H0.343262M4.34318 0.5L8.23227 4.5L4.34318 8.5" />
+                </svg>
+            </div>
+        </div>
     </div>
     <a id="news-close" class="close-btn">
         <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
