@@ -103,14 +103,6 @@ const projects = [
         elements: [elements.interieur, elements.exterieur]
     },
     {
-        id: "15-chp",
-        name: "15 CHP",
-        fonction: [fonction.logement],
-        action: [action.transformation],
-        materiaux: [materiaux.mixte],
-        elements: [elements.interieur]
-    },
-    {
         id: "15-meg",
         name: "15 MEG",
         fonction: [fonction.culturel],
@@ -206,4 +198,20 @@ const projects = [
         materiaux: [materiaux.mixte],
         elements: [elements.interieur, elements.exterieur]
     },
+    {
+        id: "alimentarium",
+        name: "Alimentarium",
+        fonction: [fonction.culturel],
+        action: [action.scenographie],
+        materiaux: [materiaux.bois, materiaux.metal],
+        elements: [elements.interieur, elements.exterieur]
+    },
+    // {
+    //     id: "25-tzo",
+    //     name: "25 TZO",
+    //     fonction: [fonction.logement],
+    //     action: [action.construction],
+    //     materiaux: [materiaux.bois, materiaux.terre],
+    //     elements: [elements.interieur, elements.exterieur]
+    // },
 ]
