@@ -47,14 +47,6 @@ const projects = [
         elements: [elements.interieur, elements.exterieur]
     },
     {
-        id: "04-stm",
-        name: "04 STM",
-        fonction: [fonction.education],
-        action: [action.concours],
-        materiaux: [materiaux.vegetal],
-        elements: [elements.exterieur]
-    },
-    {
         id: "05-gol",
         name: "05 GOL",
         fonction: [fonction.logement],
