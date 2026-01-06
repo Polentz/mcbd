@@ -144,7 +144,7 @@ video {
         font-size: 1.6rem;
     }
 
-    .page-info .info-wrapper {
+    /* .page-info .info-wrapper {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -152,7 +152,7 @@ video {
         -ms-grid-column: 3;
         grid-column: 3;
         grid-column-start: 3;
-    }
+    } */
 }
 
 @media screen and (max-width: 720px) {
