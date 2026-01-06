@@ -191,19 +191,11 @@ const projects = [
         elements: [elements.interieur, elements.exterieur]
     },
     {
-        id: "alimentarium",
+        id: "25-alimentarium",
         name: "Alimentarium",
         fonction: [fonction.culturel],
         action: [action.scenographie],
         materiaux: [materiaux.bois, materiaux.metal],
         elements: [elements.interieur, elements.exterieur]
     },
-    // {
-    //     id: "25-tzo",
-    //     name: "25 TZO",
-    //     fonction: [fonction.logement],
-    //     action: [action.construction],
-    //     materiaux: [materiaux.bois, materiaux.terre],
-    //     elements: [elements.interieur, elements.exterieur]
-    // },
 ]

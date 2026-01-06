@@ -187,3 +187,16 @@ closeBtns.forEach(btn => {
         closeSection();
     });
 });
+
+const doc = document.documentElement;
+const titles = document.querySelectorAll(".project-title--lv");
+let maxWidth = 0;
+
+for (let i = 0; i < titles.length; i++) {
+    const titleWidth = titles[i].offsetWidth;
+
+    if (titleWidth > maxWidth) {
+        maxWidth = titleWidth;
+    }
+    doc.style.setProperty("--title-width", `${maxWidth}px`);
+};

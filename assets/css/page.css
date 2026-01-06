@@ -165,6 +165,7 @@ video {
     .filters--page,
     .page-container {
         cursor: revert;
+        bottom: 3rem;
     }
 
     .cursor {

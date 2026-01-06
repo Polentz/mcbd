@@ -478,9 +478,10 @@ footer a:hover {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    gap: var(--general-margin);
     position: fixed;
     top: 0;
     left: 0;
@@ -913,7 +914,8 @@ footer a:hover {
     transition: filter 1.25s cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-filter 1.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.project--lv:hover~.project-list--lv img {
+.project--lv:hover~.project-list--lv img,
+.project-title--lv:hover~.project-list--lv img {
     -webkit-filter: none;
     filter: none;
 }
@@ -927,6 +929,7 @@ footer a:hover {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    width: 112px;
     margin-left: 1rem;
 }
 
@@ -970,6 +973,10 @@ footer a:hover {
         -ms-flex-pack: start;
         justify-content: start;
         gap: var(--general-margin);
+    }
+
+    .project-title--lv {
+        width: 128px;
     }
 }
 
