@@ -25,7 +25,7 @@ const filterProjects = () => {
         //     selectedProject.style.display = "flex";
         // }
         selectedProject.style.display = "flex";
-        const projectElements = document.getElementById(`${project.id}-wrapper`);
+        const projectElements = document.getElementById(`wrapper-${project.id}`);
         if (projectElements) {
             projectElements.style.display = "flex";
         };
@@ -38,7 +38,7 @@ const filterProjects = () => {
         //     selectedProject.style.display = filters.length > 0 ? "none" : "flex";
         // }
         selectedProject.style.display = filters.length > 0 ? "none" : "flex";
-        const projectElements = document.getElementById(`${project.id}-wrapper`);
+        const projectElements = document.getElementById(`wrapper-${project.id}`);
         if (projectElements) {
             projectElements.style.display = filters.length > 0 ? "none" : "inherit";
         };
@@ -109,7 +109,7 @@ const toThePage = document.querySelector(".to-the-page");
 
 projectShape.forEach(shape => {
     projectDiv.forEach(div => {
-        if (div.id === `${shape.id}-wrapper`) {
+        if (div.id === `wrapper-${shape.id}`) {
             const plan = div.querySelector(".project-plan");
             const info = div.querySelector(".project-info");
             const anchorTag = document.querySelectorAll(".js-href");

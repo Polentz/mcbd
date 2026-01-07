@@ -3,6 +3,7 @@
     --txt-color: #171a19;
     --bg-color: #fefefe;
     --orange: #e24011;
+    --difference-color: #16c6ea;
     --ecru: #c0b490;
     --light-ecru: #ded6bf;
     --nav: 5rem;
@@ -657,190 +658,190 @@ footer a:hover {
     stroke: var(--txt-color);
 }
 
-.project-wrapper:nth-of-type(1)>.project,
-.project-wrapper:nth-of-type(1)>.project-plan,
-.project-wrapper:nth-of-type(1)>.project-info {
+#wrapper-00-bio.project-wrapper>.project,
+#wrapper-00-bio.project-wrapper>.project-plan,
+#wrapper-00-bio.project-wrapper>.project-info {
     top: 10%;
     left: 18%;
 }
 
-.project-wrapper:nth-of-type(2)>.project,
-.project-wrapper:nth-of-type(2)>.project-plan,
-.project-wrapper:nth-of-type(2)>.project-info {
-    top: 15%;
-    left: 30%;
-}
-
-.project-wrapper:nth-of-type(3)>.project,
-.project-wrapper:nth-of-type(3)>.project-plan,
-.project-wrapper:nth-of-type(3)>.project-info {
+#wrapper-05-gol.project-wrapper>.project,
+#wrapper-05-gol.project-wrapper>.project-plan,
+#wrapper-05-gol.project-wrapper>.project-info {
     top: 6%;
     left: 57%;
 }
 
-.project-wrapper:nth-of-type(4)>.project,
-.project-wrapper:nth-of-type(4)>.project-plan,
-.project-wrapper:nth-of-type(4)>.project-info {
+#wrapper-07-bot.project-wrapper>.project,
+#wrapper-07-bot.project-wrapper>.project-plan,
+#wrapper-07-bot.project-wrapper>.project-info {
     top: 17%;
     left: 70%;
 }
 
-.project-wrapper:nth-of-type(5)>.project,
-.project-wrapper:nth-of-type(5)>.project-plan,
-.project-wrapper:nth-of-type(5)>.project-info {
+#wrapper-07-vsc.project-wrapper>.project,
+#wrapper-07-vsc.project-wrapper>.project-plan,
+#wrapper-07-vsc.project-wrapper>.project-info {
     top: 14%;
     left: 85%;
 }
 
-.project-wrapper:nth-of-type(6)>.project,
-.project-wrapper:nth-of-type(6)>.project-plan,
-.project-wrapper:nth-of-type(6)>.project-info {
+#wrapper-08-lul.project-wrapper>.project,
+#wrapper-08-lul.project-wrapper>.project-plan,
+#wrapper-08-lul.project-wrapper>.project-info {
     top: 30%;
     left: 15%;
 }
 
-.project-wrapper:nth-of-type(7)>.project,
-.project-wrapper:nth-of-type(7)>.project-plan,
-.project-wrapper:nth-of-type(7)>.project-info {
+#wrapper-14-adc.project-wrapper>.project,
+#wrapper-14-adc.project-wrapper>.project-plan,
+#wrapper-14-adc.project-wrapper>.project-info {
     top: 65%;
     left: 80%;
 }
 
-.project-wrapper:nth-of-type(8)>.project,
-.project-wrapper:nth-of-type(8)>.project-plan,
-.project-wrapper:nth-of-type(8)>.project-info {
+#wrapper-14-oex.project-wrapper>.project,
+#wrapper-14-oex.project-wrapper>.project-plan,
+#wrapper-14-oex.project-wrapper>.project-info {
     top: 20%;
     left: 45%;
 }
 
-.project-wrapper:nth-of-type(9)>.project,
-.project-wrapper:nth-of-type(9)>.project-plan,
-.project-wrapper:nth-of-type(9)>.project-info {
-    top: 33%;
-    left: 54%;
-}
-
-.project-wrapper:nth-of-type(10)>.project,
-.project-wrapper:nth-of-type(10)>.project-plan,
-.project-wrapper:nth-of-type(10)>.project-info {
+#wrapper-15-meg.project-wrapper>.project,
+#wrapper-15-meg.project-wrapper>.project-plan,
+#wrapper-15-meg.project-wrapper>.project-info {
     top: 33%;
     left: 81%;
 }
 
-.project-wrapper:nth-of-type(11)>.project,
-.project-wrapper:nth-of-type(11)>.project-plan,
-.project-wrapper:nth-of-type(11)>.project-info {
+#wrapper-16-pat.project-wrapper>.project,
+#wrapper-16-pat.project-wrapper>.project-plan,
+#wrapper-16-pat.project-wrapper>.project-info {
     top: 50%;
     left: 67%;
 }
 
-.project-wrapper:nth-of-type(12)>.project,
-.project-wrapper:nth-of-type(12)>.project-plan,
-.project-wrapper:nth-of-type(12)>.project-info {
+#wrapper-17-far.project-wrapper>.project,
+#wrapper-17-far.project-wrapper>.project-plan,
+#wrapper-17-far.project-wrapper>.project-info {
     top: 54%;
     left: 47%;
 }
 
-.project-wrapper:nth-of-type(13)>.project,
-.project-wrapper:nth-of-type(13)>.project-plan,
-.project-wrapper:nth-of-type(13)>.project-info {
+#wrapper-18-adr.project-wrapper>.project,
+#wrapper-18-adr.project-wrapper>.project-plan,
+#wrapper-18-adr.project-wrapper>.project-info {
     top: 53%;
     left: 15%;
 }
 
-.project-wrapper:nth-of-type(14)>.project,
-.project-wrapper:nth-of-type(14)>.project-plan,
-.project-wrapper:nth-of-type(14)>.project-info {
+#wrapper-19-fus.project-wrapper>.project,
+#wrapper-19-fus.project-wrapper>.project-plan,
+#wrapper-19-fus.project-wrapper>.project-info {
     top: 83%;
     left: 75%;
 }
 
-.project-wrapper:nth-of-type(15)>.project,
-.project-wrapper:nth-of-type(15)>.project-plan,
-.project-wrapper:nth-of-type(15)>.project-info {
+#wrapper-20-bus.project-wrapper>.project,
+#wrapper-20-bus.project-wrapper>.project-plan,
+#wrapper-20-bus.project-wrapper>.project-info {
     top: 50%;
     left: 92%;
 }
 
-.project-wrapper:nth-of-type(16)>.project,
-.project-wrapper:nth-of-type(16)>.project-plan,
-.project-wrapper:nth-of-type(16)>.project-info {
+#wrapper-20-pgm.project-wrapper>.project,
+#wrapper-20-pgm.project-wrapper>.project-plan,
+#wrapper-20-pgm.project-wrapper>.project-info {
     top: 72%;
     left: 17%;
 }
 
-.project-wrapper:nth-of-type(17)>.project,
-.project-wrapper:nth-of-type(17)>.project-plan,
-.project-wrapper:nth-of-type(17)>.project-info {
+#wrapper-21-gar.project-wrapper>.project,
+#wrapper-21-gar.project-wrapper>.project-plan,
+#wrapper-21-gar.project-wrapper>.project-info {
     top: 63%;
     left: 35%;
 }
 
-.project-wrapper:nth-of-type(18)>.project,
-.project-wrapper:nth-of-type(18)>.project-plan,
-.project-wrapper:nth-of-type(18)>.project-info {
+#wrapper-21-hea.project-wrapper>.project,
+#wrapper-21-hea.project-wrapper>.project-plan,
+#wrapper-21-hea.project-wrapper>.project-info {
     top: 82%;
     left: 30%;
 }
 
-.project-wrapper:nth-of-type(19)>.project,
-.project-wrapper:nth-of-type(19)>.project-plan,
-.project-wrapper:nth-of-type(19)>.project-info {
+#wrapper-22-per.project-wrapper>.project,
+#wrapper-22-per.project-wrapper>.project-plan,
+#wrapper-22-per.project-wrapper>.project-info {
     top: 65%;
     left: 60%;
 }
 
-.project-wrapper:nth-of-type(20)>.project,
-.project-wrapper:nth-of-type(20)>.project-plan,
-.project-wrapper:nth-of-type(20)>.project-info {
+#wrapper-22-sif.project-wrapper>.project,
+#wrapper-22-sif.project-wrapper>.project-plan,
+#wrapper-22-sif.project-wrapper>.project-info {
     top: 40%;
     left: 27%;
 }
 
-.project-wrapper:nth-of-type(21)>.project,
-.project-wrapper:nth-of-type(21)>.project-plan,
-.project-wrapper:nth-of-type(21)>.project-info {
+#wrapper-22-vdt.project-wrapper>.project,
+#wrapper-22-vdt.project-wrapper>.project-plan,
+#wrapper-22-vdt.project-wrapper>.project-info {
     top: 75%;
     left: 52%;
 }
 
-.project-wrapper:nth-of-type(5)>.project-info,
-.project-wrapper:nth-of-type(15)>.project-info {
+#wrapper-25-alimentarium.project-wrapper>.project,
+#wrapper-25-alimentarium.project-wrapper>.project-plan,
+#wrapper-25-alimentarium.project-wrapper>.project-info {
+    top: 15%;
+    left: 30%;
+}
+
+#wrapper-25-tzo.project-wrapper>.project,
+#wrapper-25-tzo.project-wrapper>.project-plan,
+#wrapper-25-tzo.project-wrapper>.project-info {
+    top: 33%;
+    left: 54%;
+}
+
+#wrapper-07-vsc.project-wrapper>.project-info,
+#wrapper-20-bus.project-wrapper>.project-info {
     -webkit-transform: translate(-140%, -25%);
     -ms-transform: translate(-140%, -25%);
     transform: translate(-140%, -25%);
     margin-top: 0;
 }
 
-.project-wrapper:nth-of-type(10)>.project-info {
+#wrapper-15-meg.project-wrapper>.project-info {
     -webkit-transform: translate(-130%, -25%);
     -ms-transform: translate(-130%, -25%);
     transform: translate(-130%, -25%);
     margin-top: 0;
 }
 
-.project-wrapper:nth-of-type(1)>.project-info,
-.project-wrapper:nth-of-type(2)>.project-info,
-.project-wrapper:nth-of-type(3)>.project-info,
-.project-wrapper:nth-of-type(4)>.project-info,
-.project-wrapper:nth-of-type(6)>.project-info,
-.project-wrapper:nth-of-type(8)>.project-info,
-.project-wrapper:nth-of-type(9)>.project-info,
-.project-wrapper:nth-of-type(11)>.project-info,
-.project-wrapper:nth-of-type(12)>.project-info,
-.project-wrapper:nth-of-type(13)>.project-info,
-.project-wrapper:nth-of-type(20)>.project-info {
+#wrapper-00-bio.project-wrapper>.project-info,
+#wrapper-05-gol.project-wrapper>.project-info,
+#wrapper-07-bot.project-wrapper>.project-info,
+#wrapper-08-lul.project-wrapper>.project-info,
+#wrapper-14-oex.project-wrapper>.project-info,
+#wrapper-16-pat.project-wrapper>.project-info,
+#wrapper-17-far.project-wrapper>.project-info,
+#wrapper-18-adr.project-wrapper>.project-info,
+#wrapper-22-sif.project-wrapper>.project-info,
+#wrapper-25-alimentarium.project-wrapper>.project-info,
+#wrapper-25-tzo.project-wrapper>.project-info {
     margin-top: 10%;
     margin-left: -5%;
 }
 
-.project-wrapper:nth-of-type(7)>.project-info,
-.project-wrapper:nth-of-type(14)>.project-info,
-.project-wrapper:nth-of-type(16)>.project-info,
-.project-wrapper:nth-of-type(17)>.project-info,
-.project-wrapper:nth-of-type(18)>.project-info,
-.project-wrapper:nth-of-type(19)>.project-info,
-.project-wrapper:nth-of-type(21)>.project-info {
+#wrapper-14-adc.project-wrapper>.project-info,
+#wrapper-19-fus.project-wrapper>.project-info,
+#wrapper-20-pgm.project-wrapper>.project-info,
+#wrapper-21-gar.project-wrapper>.project-info,
+#wrapper-21-hea.project-wrapper>.project-info,
+#wrapper-22-per.project-wrapper>.project-info,
+#wrapper-22-vdt.project-wrapper>.project-info {
     -webkit-transform: translate(-30%, -150%);
     -ms-transform: translate(-30%, -150%);
     transform: translate(-30%, -150%);
@@ -942,11 +943,11 @@ footer a:hover {
     margin-left: -10%;
 }
 
-.project-wrapper--lv:nth-of-type(20) .project-info {
+.project-wrapper--lv:last-of-type .project-info {
     margin-left: 0%;
 }
 
-.project-wrapper--lv:nth-of-type(1) .project-info {
+.project-wrapper--lv:first-of-type .project-info {
     margin-top: -15%;
 }
 
@@ -984,6 +985,7 @@ footer a:hover {
     :root {
         --general-margin: 1rem;
         --large-txt: calc(2vw + 2.5rem);
+        --project-size: calc(3vw + 8rem);
     }
 
     body.home {
@@ -1067,6 +1069,10 @@ footer a:hover {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         -webkit-box-align: end;
@@ -1083,7 +1089,6 @@ footer a:hover {
 
     .project {
         position: static;
-        height: auto;
         width: 100%;
     }
 
@@ -1169,6 +1174,10 @@ footer a:hover {
         height: auto;
     }
 
+    #wrapper-25-tzo.project-wrapper--lv .project--lv {
+        width: 80%;
+    }
+
     .project-list--lv {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1187,9 +1196,11 @@ footer a:hover {
     }
 
     .project-title--lv {
+        width: auto;
         font-size: var(--large-txt);
         font-weight: 200;
         line-height: 1;
+        text-transform: uppercase;
         margin-left: 0;
         -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;

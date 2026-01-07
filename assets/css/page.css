@@ -100,6 +100,8 @@ video {
 }
 
 .page-text {
+    color: var(--bg-color);
+    mix-blend-mode: difference;
     margin: var(--nav) 0;
     padding: var(--general-margin);
     z-index: 2;
@@ -201,7 +203,6 @@ video {
         mix-blend-mode: unset;
         -webkit-filter: opacity(.8);
         filter: opacity(.8);
-        z-index: 2;
         display: block;
     }
 
