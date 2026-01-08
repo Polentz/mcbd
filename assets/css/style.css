@@ -66,10 +66,14 @@ footer a,
 
 nav a:hover,
 footer a:hover,
-.project-title--lv:hover,
 .page-gallery a:hover,
 .close-btn:hover {
     color: inherit;
+    border-bottom: none;
+}
+
+.project-title--lv:hover {
+    color: var(--orange);
     border-bottom: none;
 }
 
@@ -791,9 +795,9 @@ footer a:hover {
     left: 52%;
 }
 
-#wrapper-25-alimentarium.project-wrapper>.project,
-#wrapper-25-alimentarium.project-wrapper>.project-plan,
-#wrapper-25-alimentarium.project-wrapper>.project-info {
+#wrapper-25-ali.project-wrapper>.project,
+#wrapper-25-ali.project-wrapper>.project-plan,
+#wrapper-25-ali.project-wrapper>.project-info {
     top: 15%;
     left: 30%;
 }
@@ -802,7 +806,7 @@ footer a:hover {
 #wrapper-25-tzo.project-wrapper>.project-plan,
 #wrapper-25-tzo.project-wrapper>.project-info {
     top: 33%;
-    left: 54%;
+    left: 48%;
 }
 
 #wrapper-07-vsc.project-wrapper>.project-info,
@@ -829,7 +833,7 @@ footer a:hover {
 #wrapper-17-far.project-wrapper>.project-info,
 #wrapper-18-adr.project-wrapper>.project-info,
 #wrapper-22-sif.project-wrapper>.project-info,
-#wrapper-25-alimentarium.project-wrapper>.project-info,
+#wrapper-25-ali.project-wrapper>.project-info,
 #wrapper-25-tzo.project-wrapper>.project-info {
     margin-top: 10%;
     margin-left: -5%;
@@ -915,8 +919,12 @@ footer a:hover {
     transition: filter 1.25s cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-filter 1.25s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.project--lv:hover~.project-list--lv img,
-.project-title--lv:hover~.project-list--lv img {
+.project-list--lv img.no-filter {
+    -webkit-filter: none;
+    filter: none;
+}
+
+.project--lv:hover~.project-list--lv img {
     -webkit-filter: none;
     filter: none;
 }
@@ -930,7 +938,7 @@ footer a:hover {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    width: 112px;
+    width: 56px;
     margin-left: 1rem;
 }
 
@@ -977,7 +985,7 @@ footer a:hover {
     }
 
     .project-title--lv {
-        width: 128px;
+        width: 80px;
     }
 }
 
@@ -1109,8 +1117,8 @@ footer a:hover {
 
     .project-plan {
         position: fixed;
-        top: calc(var(--general-margin)*2) !important;
-        left: var(--general-margin) !important;
+        top: 5rem;
+        left: var(--general-margin);
         -webkit-transform: scale(1);
         -ms-transform: scale(1);
         transform: scale(1);

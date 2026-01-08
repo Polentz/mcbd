@@ -187,3 +187,19 @@ closeBtns.forEach(btn => {
         closeSection();
     });
 });
+
+const projectLists = document.querySelectorAll(".project-list--lv");
+projectLists.forEach(list => {
+    const title = list.querySelector(".project-title--lv");
+    const images = list.querySelectorAll(".project-list--lv img");
+    title.addEventListener("mouseenter", () => {
+        images.forEach(image => {
+            image.classList.add("no-filter");
+        });
+    });
+    title.addEventListener("mouseleave", () => {
+        images.forEach(image => {
+            image.classList.remove("no-filter");
+        });
+    });
+});

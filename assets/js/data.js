@@ -191,8 +191,8 @@ const projects = [
         elements: [elements.interieur, elements.exterieur]
     },
     {
-        id: "25-alimentarium",
-        name: "Alimentarium",
+        id: "25-ali",
+        name: "25 ALI",
         fonction: [fonction.culturel],
         action: [action.scenographie],
         materiaux: [materiaux.bois, materiaux.metal],
